@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+apply from: "../ktlint.gradle"
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.oscarg798.pokedesk"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        freeCompilerArgs = ["-Xallow-result-return-type",
+                            "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                            "-Xopt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+                            "-Xopt-in=androidx.compose.ui.ExperimentalComposeUiApi",
+                            "-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                            "-Xopt-in=kotlinx.coroutines.FlowPreview",
+                            "-Xopt-in=kotlin.contracts.ExperimentalContracts"]
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion '1.5.31'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+
+
+    implementation libs.androidx.coreKtx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.compose.material
+    implementation libs.compose.material3
+    implementation libs.compose.ui
+    implementation libs.compose.tooling
+    implementation libs.androidx.lifecycle.runtime
+    implementation libs.compose.activity
+    implementation libs.accompanist.placeholder
+    implementation libs.accompanist.flowLayout
+
+    implementation libs.retrofit2.base
+    implementation libs.retrofit2.converter
+    implementation libs.okhttp3.base
+    implementation libs.okhttp3.logging
+
+    implementation libs.landscapist.fresco
+
+    implementation libs.hilt.android
+    kapt libs.hilt.androidCompiler
+    kapt libs.hilt.dagger.compiler
+
+    testImplementation libs.junit.base
+    testImplementation libs.mockk.base
+    testImplementation libs.junit.base
+    testImplementation libs.coroutines.test
+}
