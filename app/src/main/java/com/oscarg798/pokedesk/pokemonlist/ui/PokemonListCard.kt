@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -25,33 +26,33 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.capitalize
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.flowlayout.FlowRow
 import com.oscarg798.pokedesk.R
-import com.oscarg798.pokedesk.pokemonlist.PokemonListItem
+import com.oscarg798.pokedesk.lib.ui.Dimensions
+import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.skydoves.landscapist.fresco.FrescoImage
 
 @Composable
 fun PokemonListCard(pokemon: PokemonListItem) {
-
     Card(
-        shape = RoundedCornerShape(16.dp),
-        backgroundColor = Color(0xff323232),
-        contentColor = Color(0xff323232),
+        shape = RoundedCornerShape(MaterialTheme.Dimensions.Medium),
+        backgroundColor = MaterialTheme.colors.surface,
+        contentColor = MaterialTheme.colors.surface,
         modifier = Modifier
             .fillMaxWidth()
             .wrapContentHeight()
     ) {
         Row(
-            Modifier
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight()
         ) {
             Column(
                 modifier = Modifier
-                    .padding(16.dp)
+                    .padding(MaterialTheme.Dimensions.Medium)
                     .weight(.6f)
                     .fillMaxHeight(),
                 horizontalAlignment = Alignment.Start,
@@ -59,11 +60,13 @@ fun PokemonListCard(pokemon: PokemonListItem) {
             ) {
                 Text(
                     text = pokemon.name.capitalize(Locale.current),
-                    style = TextStyle(color = Color.White, fontWeight = FontWeight.Medium)
+                    style = MaterialTheme.typography.h2.copy(
+                        color = MaterialTheme.colors.onSurface
+                    )
                 )
                 Row(
                     modifier = Modifier
-                        .padding(top = 8.dp)
+                        .padding(top = MaterialTheme.Dimensions.Small)
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_pokeball_color),
@@ -71,26 +74,34 @@ fun PokemonListCard(pokemon: PokemonListItem) {
                         modifier = Modifier.size(20.dp)
                     )
                     Text(
-                        text = "#${pokemon.order}", modifier = Modifier.padding(start = 4.dp),
-                        style = TextStyle(color = Color.White)
+                        text = "#${pokemon.id}",
+                        modifier = Modifier.padding(start = MaterialTheme.Dimensions.ExtraSmall),
+                        style = MaterialTheme.typography.body1.copy(
+                            color = MaterialTheme.colors.onSurface
+                        )
                     )
                 }
 
                 FlowRow(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 8.dp),
-                    crossAxisSpacing = 4.dp,
+                        .padding(top = MaterialTheme.Dimensions.Small),
+                    crossAxisSpacing = MaterialTheme.Dimensions.ExtraSmall,
                     content = {
                         pokemon.types.map {
-                            TypeChip(type = it, modifier = Modifier.padding(horizontal = 4.dp))
+                            TypeChip(
+                                type = it,
+                                modifier = Modifier.padding(horizontal = MaterialTheme.Dimensions.ExtraSmall)
+                            )
                         }
                     })
             }
 
-            Box(   modifier = Modifier
-                .weight(.4f)
-                .height(120.dp)) {
+            Box(
+                modifier = Modifier
+                    .weight(.4f)
+                    .height(120.dp)
+            ) {
                 FrescoImage(
                     imageUrl = pokemon.image,
                     contentScale = ContentScale.Fit,
@@ -105,13 +116,16 @@ fun PokemonListCard(pokemon: PokemonListItem) {
 @Composable
 private fun TypeChip(type: PokemonListItem.Type, modifier: Modifier = Modifier) {
     Card(
-        shape = RoundedCornerShape(8.dp),
+        shape = RoundedCornerShape(MaterialTheme.Dimensions.Small),
         modifier = modifier.wrapContentSize(),
         backgroundColor = type.color
     ) {
         Text(
             text = type.name.capitalize(Locale.current),
-            Modifier.padding(vertical = 4.dp, horizontal = 8.dp),
+            Modifier.padding(
+                vertical = MaterialTheme.Dimensions.ExtraSmall,
+                horizontal = MaterialTheme.Dimensions.Small
+            ),
             style = TextStyle(
                 color = if (type.color.isDarkColor()) {
                     Color.White

@@ -1,4 +1,4 @@
-package com.oscarg798.pokedesk.pokemonlist
+package com.oscarg798.pokedesk.pokemonlist.model
 
 import androidx.compose.ui.graphics.Color
 

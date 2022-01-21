@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+
 }
 
 apply from: "../ktlint.gradle"
@@ -72,6 +73,13 @@ dependencies {
     implementation libs.compose.activity
     implementation libs.accompanist.placeholder
     implementation libs.accompanist.flowLayout
+
+    implementation libs.androidx.navigation.compose
+
+    implementation libs.coroutines.core
+    implementation libs.coroutines.android
+
+    implementation libs.hilt.compose
 
     implementation libs.retrofit2.base
     implementation libs.retrofit2.converter

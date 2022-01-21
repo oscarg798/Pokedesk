@@ -1,8 +1,9 @@
-package com.oscarg798.pokedesk.pokemonlist
+package com.oscarg798.pokedesk.pokemonlist.usecase
 
 import androidx.compose.ui.graphics.Color
 import com.oscarg798.pokedesk.lib.pokemon.PokemonRepository
 import com.oscarg798.pokedesk.lib.type.TypeRepository
+import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import dagger.Reusable
 import javax.inject.Inject
 
