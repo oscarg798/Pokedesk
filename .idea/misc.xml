@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/compose-model-1642678997373.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.39791666666666664" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.39791666666666664" />
+        <entry key="app/src/main/res/drawable/ic_launcher_pokedex_background.xml" value="0.39791666666666664" />
         <entry key="app/src/main/res/drawable/ic_pokeball.xml" value="0.3921875" />
         <entry key="app/src/main/res/drawable/ic_pokeball_color.xml" value="0.3921875" />
+        <entry key="app/src/main/res/drawable/ic_pokeball_grayscale.xml" value="0.39791666666666664" />
         <entry key="app/src/main/res/font/cabin_medium.xml" value="0.22962962962962963" />
         <entry key="app/src/main/res/layout/layout.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_pokedex.xml" value="0.39791666666666664" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_pokedex_round.xml" value="0.39791666666666664" />
       </map>
     </option>
   </component>

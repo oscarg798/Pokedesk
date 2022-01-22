@@ -33,6 +33,8 @@ androidx-work-runtime = "androidx.work:work-runtime:2.5.0"
 androidx-work-gcm = "androidx.work:work-gcm:2.5.0"
 androidx-work-testing = "androidx.work:work-testing:2.5.0"
 
+androidx-splashscreen = "androidx.core:core-splashscreen:1.0.0-alpha02"
+
 gms-gcm = "com.google.android.gms:play-services-gcm:17.0.0"
 gms-tagmanager = "com.google.android.gms:play-services-tagmanager:17.0.0"
 gms-location = "com.google.android.gms:play-services-location:18.0.0"

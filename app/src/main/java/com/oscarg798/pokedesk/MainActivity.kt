@@ -1,10 +1,15 @@
 package com.oscarg798.pokedesk
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.core.animation.doOnEnd
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.splashscreen.SplashScreenViewProvider
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
@@ -23,9 +28,11 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen().setOnExitAnimationListener { splashScreenView ->
+            animationForSplashScreen(splashScreenView)
+        }
         setContent {
             val navController = rememberNavController()
-
             PokeDeskTheme {
                 CompositionLocalProvider(LocalNavControllerProvider provides navController) {
                     NavHost(navController = navController, startDestination = PokemonListRoute.route) {
@@ -35,6 +42,18 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+private fun animationForSplashScreen(splashScreenView: SplashScreenViewProvider) {
+    val alpha = ObjectAnimator.ofFloat(
+        splashScreenView.view,
+        View.ALPHA,
+        1f,
+        0f
+    )
+    alpha.duration = 3000L
+    alpha.doOnEnd { splashScreenView.remove() }
+    alpha.start()
 }
 
 internal val LocalNavControllerProvider = staticCompositionLocalOf<NavController> {
