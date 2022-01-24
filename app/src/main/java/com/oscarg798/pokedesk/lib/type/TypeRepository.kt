@@ -1,6 +1,6 @@
 package com.oscarg798.pokedesk.lib.type
 
-import com.oscarg798.pokedesk.common.models.Pokemon
+import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
 import java.lang.IllegalStateException
 import javax.inject.Inject
 

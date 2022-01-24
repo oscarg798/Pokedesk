@@ -13,7 +13,7 @@ class GetPokemonListItems @Inject constructor(
     private val typeRepository: TypeRepository
 ) {
 
-    operator fun invoke(): List<PokemonListItem> {
+    suspend operator fun invoke(): List<PokemonListItem> {
         return pokemonRepository.getPokemons().map {
             PokemonListItem(
                 it.id,

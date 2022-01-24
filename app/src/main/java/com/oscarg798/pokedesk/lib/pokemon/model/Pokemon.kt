@@ -1,4 +1,4 @@
-package com.oscarg798.pokedesk.common.models
+package com.oscarg798.pokedesk.lib.pokemon.model
 
 data class Pokemon(
     val id: Int,

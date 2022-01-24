@@ -1,7 +1,7 @@
 package com.oscarg798.pokedesk
 
 import androidx.compose.ui.graphics.Color
-import com.oscarg798.pokedesk.common.models.Pokemon
+import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
 import com.oscarg798.pokedesk.lib.type.TypeColor
 import com.oscarg798.pokedesk.lib.type.TypeColorLoader
 import com.oscarg798.pokedesk.lib.type.TypeRepository
