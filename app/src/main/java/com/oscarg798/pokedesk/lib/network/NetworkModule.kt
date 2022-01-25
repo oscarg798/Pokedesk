@@ -8,13 +8,13 @@ import dagger.Reusable
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoSet
+import java.util.concurrent.TimeUnit
+import javax.inject.Singleton
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
-import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
 @Module
@@ -35,7 +35,7 @@ object NetworkModule {
     fun provideHttpClient(
         interceptors: Set<@JvmSuppressWildcards Interceptor>
     ): OkHttpClient {
-       val builder =  OkHttpClient.Builder()
+        val builder = OkHttpClient.Builder()
             .connectTimeout(ConnectionTimeOut, TimeUnit.SECONDS)
             .readTimeout(ReadTimeOut, TimeUnit.SECONDS)
             .retryOnConnectionFailure(true)

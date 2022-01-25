@@ -26,6 +26,8 @@ data class ApiPokemon(
         val artWork: ArtWork
     ) {
 
+        fun getImageUrl() = artWork.detail.url
+
         data class ArtWork(
             @SerializedName("official-artwork")
             val detail: Detail
@@ -37,6 +39,19 @@ data class ApiPokemon(
         }
     }
 
+    data class APIType(
+        @SerializedName("type")
+        val detail: Detail
+    ) {
+
+        data class Detail(
+            @SerializedName("url")
+            val url: String,
+            @SerializedName("name")
+            val name: String
+        )
+    }
+
     data class ApiStat(
         @SerializedName("base_stat")
         val value: Int,
@@ -45,7 +60,7 @@ data class ApiPokemon(
     ) {
 
         fun toStat() = Pokemon.Stat(
-            id = statInfo.url.split("/").take(2).first().toInt(),
+            id = statInfo.url.split("/").takeLast(2).first().toInt(),
             name = statInfo.name,
             value = value
         )

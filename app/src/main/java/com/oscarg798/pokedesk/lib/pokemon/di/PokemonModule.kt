@@ -1,6 +1,6 @@
 package com.oscarg798.pokedesk.lib.pokemon.di
 
-import com.oscarg798.pokedesk.lib.pokemon.PokemonService
+import com.oscarg798.pokedesk.lib.pokemon.network.PokemonService
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable
