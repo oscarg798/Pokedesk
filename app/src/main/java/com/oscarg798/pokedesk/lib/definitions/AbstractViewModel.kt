@@ -15,7 +15,7 @@ abstract class AbstractViewModel<ViewState, Event>(
     private val coroutineContextProvider: CoroutineContextProvider
 ) : ViewModel(), CoroutineContextProvider by coroutineContextProvider {
 
-    protected val _event = MutableSharedFlow<Event>(
+    private val _event = MutableSharedFlow<Event>(
         extraBufferCapacity = 1
     )
 
@@ -44,7 +44,7 @@ abstract class AbstractViewModel<ViewState, Event>(
         launch { update { state -> reducer(state) } }
     }
 
-    protected fun currentState() = _state.replayCache.firstOrNull() ?: initialState
+    private fun currentState() = _state.replayCache.firstOrNull() ?: initialState
 }
 
 fun <ViewState, Event> AbstractViewModel<ViewState, Event>.launch(block: suspend CoroutineScope.() -> Unit) =
