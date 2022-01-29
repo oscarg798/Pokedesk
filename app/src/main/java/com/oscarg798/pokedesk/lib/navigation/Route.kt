@@ -35,9 +35,11 @@ abstract class Route(
         )
     }
 
-    fun getDeepLinks(): List<NavDeepLink> = listOf(navDeepLink {
-        uriPattern = getUriPattern()
-    })
+    fun getDeepLinks(): List<NavDeepLink> = listOf(
+        navDeepLink {
+            uriPattern = getUriPattern()
+        }
+    )
 
     private fun getUriPattern() = "$DeepLinkUri/$uriPatternSuffix"
 }
@@ -52,4 +54,3 @@ fun <T : Route> NavGraphBuilder.composable(
 }
 
 private const val DeepLinkUri = "https://pokedesk/"
-

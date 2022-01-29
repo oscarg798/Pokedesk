@@ -88,6 +88,8 @@ dependencies {
 
     implementation libs.landscapist.fresco
 
+    implementation libs.androidx.splashscreen
+
     implementation libs.hilt.android
     kapt libs.hilt.androidCompiler
     kapt libs.hilt.dagger.compiler

@@ -34,9 +34,11 @@ fun SearchBar(
         shape = RoundedCornerShape(MaterialTheme.Dimensions.Medium),
         maxLines = SingleLine,
         keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Search),
-        keyboardActions = KeyboardActions(onSearch = {
-            search()
-        }),
+        keyboardActions = KeyboardActions(
+            onSearch = {
+                search()
+            }
+        ),
         placeholder = {
             Text(
                 text = stringResource(R.string.search_hint),

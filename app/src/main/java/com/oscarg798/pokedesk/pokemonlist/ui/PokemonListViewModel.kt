@@ -6,8 +6,8 @@ import com.oscarg798.pokedesk.lib.definitions.launch
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
+import kotlinx.coroutines.withContext
 
 @HiltViewModel
 class PokemonListViewModel @Inject constructor(
@@ -33,12 +33,12 @@ class PokemonListViewModel @Inject constructor(
         }
     }
 
-    fun onQueryUpdated(query: String){
+    fun onQueryUpdated(query: String) {
         updateSync { it.copy(currentSearchQuery = query) }
     }
 
-    fun onSearch(){
-        //TODO: actually search based on https://github.com/oscarg798/Pokedesk/projects/1#card-76490485
+    fun onSearch() {
+        // TODO: actually search based on https://github.com/oscarg798/Pokedesk/projects/1#card-76490485
     }
 
     data class State(

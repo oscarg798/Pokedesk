@@ -5,7 +5,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class PokemonRepository @Inject constructor(){
+class PokemonRepository @Inject constructor() {
 
     fun getPokemons(): List<Pokemon> = listOf(
         Pokemon(
@@ -16,7 +16,8 @@ class PokemonRepository @Inject constructor(){
             weight = 33,
             types = setOf(
                 Pokemon.Type(
-                    1, "normal", Pokemon.Type.DamageRelations(
+                    1, "normal",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -26,7 +27,8 @@ class PokemonRepository @Inject constructor(){
                     )
                 ),
                 Pokemon.Type(
-                    6, "ground", Pokemon.Type.DamageRelations(
+                    6, "ground",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -47,7 +49,8 @@ class PokemonRepository @Inject constructor(){
             weight = 24,
             types = setOf(
                 Pokemon.Type(
-                    13, "electric", Pokemon.Type.DamageRelations(
+                    13, "electric",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -57,7 +60,8 @@ class PokemonRepository @Inject constructor(){
                     )
                 ),
                 Pokemon.Type(
-                    17, "dragon", Pokemon.Type.DamageRelations(
+                    17, "dragon",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -78,7 +82,8 @@ class PokemonRepository @Inject constructor(){
             weight = 40,
             types = setOf(
                 Pokemon.Type(
-                    11, "water", Pokemon.Type.DamageRelations(
+                    11, "water",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -88,7 +93,8 @@ class PokemonRepository @Inject constructor(){
                     )
                 ),
                 Pokemon.Type(
-                    12, "grass", Pokemon.Type.DamageRelations(
+                    12, "grass",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -98,7 +104,8 @@ class PokemonRepository @Inject constructor(){
                     )
                 ),
                 Pokemon.Type(
-                    15, "ice", Pokemon.Type.DamageRelations(
+                    15, "ice",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
@@ -108,7 +115,8 @@ class PokemonRepository @Inject constructor(){
                     )
                 ),
                 Pokemon.Type(
-                    17, "dark", Pokemon.Type.DamageRelations(
+                    17, "dark",
+                    Pokemon.Type.DamageRelations(
                         vulnerableTo = setOf(),
                         resistantAgainst = setOf(),
                         weakTo = setOf(),
