@@ -94,7 +94,8 @@ fun PokemonListCard(pokemon: PokemonListItem) {
                                 modifier = Modifier.padding(horizontal = MaterialTheme.Dimensions.ExtraSmall)
                             )
                         }
-                    })
+                    }
+                )
             }
 
             Box(
@@ -109,7 +110,6 @@ fun PokemonListCard(pokemon: PokemonListItem) {
                 )
             }
         }
-
     }
 }
 

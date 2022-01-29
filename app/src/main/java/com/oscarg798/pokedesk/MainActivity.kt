@@ -41,8 +41,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
-
 internal val LocalNavControllerProvider = staticCompositionLocalOf<NavController> {
     error("You must provide a NavController before attempt to use it")
 }

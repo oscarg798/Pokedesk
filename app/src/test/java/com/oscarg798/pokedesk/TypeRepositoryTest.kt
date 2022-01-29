@@ -40,4 +40,3 @@ class TypeRepositoryTest {
         repository.getColorFromType(type)
     }
 }
-

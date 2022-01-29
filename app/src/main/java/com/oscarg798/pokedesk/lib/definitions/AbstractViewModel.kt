@@ -47,7 +47,9 @@ abstract class AbstractViewModel<ViewState, Event>(
     private fun currentState() = _state.replayCache.firstOrNull() ?: initialState
 }
 
-fun <ViewState, Event> AbstractViewModel<ViewState, Event>.launch(block: suspend CoroutineScope.() -> Unit) =
+fun <ViewState, Event> AbstractViewModel<ViewState, Event>.launch(
+    block: suspend CoroutineScope.() -> Unit
+) =
     viewModelScope.launch {
         block()
     }

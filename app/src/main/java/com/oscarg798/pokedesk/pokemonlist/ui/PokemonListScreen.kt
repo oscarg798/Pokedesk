@@ -24,16 +24,19 @@ fun NavGraphBuilder.pokemonScreen() = composable(route = PokemonListRoute) {
 
     val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
 
-    Scaffold(topBar = {
-        SearchBar(
-            search = { viewModel.onSearch() },
-            onQueryUpdated = { submittedQuery ->
-                viewModel.onQueryUpdated(query = submittedQuery)
-            }, currentQuery = state.currentSearchQuery,
-            modifier = Modifier.fillMaxWidth()
-                .padding(MaterialTheme.Dimensions.Small)
-        )
-    }) {
+    Scaffold(
+        topBar = {
+            SearchBar(
+                search = { viewModel.onSearch() },
+                onQueryUpdated = { submittedQuery ->
+                    viewModel.onQueryUpdated(query = submittedQuery)
+                },
+                currentQuery = state.currentSearchQuery,
+                modifier = Modifier.fillMaxWidth()
+                    .padding(MaterialTheme.Dimensions.Small)
+            )
+        }
+    ) {
         if (state.pokemonListItems != null) {
             val pokemonListItems = state.pokemonListItems!!
             LazyColumn(
@@ -41,9 +44,12 @@ fun NavGraphBuilder.pokemonScreen() = composable(route = PokemonListRoute) {
                 verticalArrangement = Arrangement.spacedBy(LocalAppDimens.current.Small),
                 contentPadding = PaddingValues(LocalAppDimens.current.Medium)
             ) {
-                items(pokemonListItems, key = { item ->
-                    item.id
-                }) { item ->
+                items(
+                    pokemonListItems,
+                    key = { item ->
+                        item.id
+                    }
+                ) { item ->
                     PokemonListCard(pokemon = item)
                 }
             }

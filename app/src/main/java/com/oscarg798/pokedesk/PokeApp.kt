@@ -7,7 +7,7 @@ import dagger.hilt.android.HiltAndroidApp
 import okhttp3.OkHttpClient
 
 @HiltAndroidApp
-class PokeApp: Application() {
+class PokeApp : Application() {
 
     override fun onCreate() {
         super.onCreate()

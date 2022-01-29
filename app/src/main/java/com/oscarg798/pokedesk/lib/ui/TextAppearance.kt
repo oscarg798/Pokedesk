@@ -92,7 +92,7 @@ fun getTypography(fontSizes: FontSizes): Typography = Typography(
         fontSize = fontSizes.H4,
         fontFamily = fontFamily
     ),
-    h6 =  TextStyle(
+    h6 = TextStyle(
         fontWeight = FontWeight.Medium,
         fontSize = fontSizes.H4,
         fontFamily = fontFamily

@@ -4,7 +4,6 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.ui.graphics.Color
 
-
 val SecondaryTextColor = Color(0xff999999)
 
 val lightColors = lightColors(
