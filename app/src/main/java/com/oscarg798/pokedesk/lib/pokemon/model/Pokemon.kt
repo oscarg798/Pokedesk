@@ -1,4 +1,4 @@
-package com.oscarg798.pokedesk.common.models
+package com.oscarg798.pokedesk.lib.pokemon.model
 
 data class Pokemon(
     val id: Int,
@@ -23,7 +23,12 @@ data class Pokemon(
             val strongAgainst: Set<Type>,
             val noEffectiveTo: Set<Type>,
             val noAffectedAgainst: Set<Type>
-        )
+        ) {
+            data class Type(
+                val id: Int,
+                val name: String
+            )
+        }
     }
 
     data class Stat(

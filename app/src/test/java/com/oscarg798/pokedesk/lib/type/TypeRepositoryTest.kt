@@ -1,10 +1,7 @@
-package com.oscarg798.pokedesk
+package com.oscarg798.pokedesk.lib.type
 
 import androidx.compose.ui.graphics.Color
-import com.oscarg798.pokedesk.common.models.Pokemon
-import com.oscarg798.pokedesk.lib.type.TypeColor
-import com.oscarg798.pokedesk.lib.type.TypeColorLoader
-import com.oscarg798.pokedesk.lib.type.TypeRepository
+import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Assert.assertEquals

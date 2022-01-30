@@ -12,16 +12,11 @@ import androidx.navigation.compose.rememberNavController
 import com.oscarg798.pokedesk.lib.ui.PokeDeskTheme
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import com.oscarg798.pokedesk.pokemonlist.ui.pokemonScreen
-import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
 import com.oscarg798.pokedesk.splash.animationForSplashScreen
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-
-    @Inject
-    lateinit var getPokemonListItems: GetPokemonListItems
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
