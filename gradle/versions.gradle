@@ -1,0 +1,87 @@
+class Version {
+
+    Integer major
+    Integer minor
+    Integer Patch
+    Integer build
+
+    Version(major, minor, patch, build) {
+        this.major = major
+        this.minor = minor
+        this.patch = patch
+        this.build = build
+    }
+
+    String getCurrentVersionName() {
+        return "${major}.${minor}.${patch}(${build})"
+    }
+}
+
+def getCurrentVersion() {
+    def props = new Properties()
+    def propertyFile = file("gradle.properties")
+    propertyFile.withInputStream { props.load(it) }
+
+
+    def major = props.getProperty("major") as Integer
+    def minor = props.getProperty("minor") as Integer
+    def patch = props.getProperty("patch") as Integer
+    def buildNumber = props.getProperty("buildNumber") as Integer
+
+    return new Version(major, minor, patch, buildNumber)
+}
+
+String getCurrentVersionName() {
+    return (getCurrentVersion() as Version).getCurrentVersionName()
+}
+
+Integer getReleaseVersionCode() {
+    def currentVersion = getCurrentVersion()
+    return ((currentVersion.major * 10000) + (currentVersion.minor * 1000) + (currentVersion.patch * 100) + currentVersion.build)
+}
+
+project.ext {
+    appVersionName = getCurrentVersionName()
+    appMinSdkVersion = 24
+    appTargetSdkVersion = 31
+    appCompileSdkVersion = 31
+    appVersionCode = getReleaseVersionCode()
+}
+
+tasks.register("bump") {
+    description = "Bump the app version"
+
+    def props = new Properties()
+    def propertyFile = file("gradle.properties")
+    propertyFile.withInputStream { props.load(it) }
+    
+    def currentVersion = getCurrentVersion() as Version
+
+    if (project.hasProperty('versionPosition')) {
+        switch (versionPosition) {
+            case 'major':
+                props.setProperty("major", (currentVersion.major + 1) as String)
+                break
+            case 'minor':
+                props.setProperty("minor", (currentVersion.minor + 1) as String)
+                break
+            case 'patch':
+                props.setProperty("patch", (currentVersion.patch + 1) as String)
+                break
+            case 'build':
+                props.setProperty("buildNumber", (currentVersion.build + 1) as String)
+                break
+            default:
+                throw IllegalStateException("VersionPosition should be major, minor, patch or build")
+        }
+        propertyFile.withWriter { props.store(it, null) }
+        it.finalizedBy("currentVersion")
+    }
+}
+
+tasks.register("currentVersion") {
+
+    file("version.txt").withWriter {
+        it.write(getCurrentVersionName())
+    }
+}

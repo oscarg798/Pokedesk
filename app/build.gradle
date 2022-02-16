@@ -9,14 +9,14 @@ plugins {
 apply from: "../ktlint.gradle"
 
 android {
-    compileSdk 31
+    compileSdk appCompileSdkVersion
 
     defaultConfig {
         applicationId "com.oscarg798.pokedesk"
-        minSdk 24
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        minSdk appMinSdkVersion
+        targetSdk appTargetSdkVersion
+        versionCode appVersionCode
+        versionName appVersionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
