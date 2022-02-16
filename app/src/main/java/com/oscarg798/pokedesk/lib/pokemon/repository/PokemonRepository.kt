@@ -20,9 +20,9 @@ class PokemonRepository @Inject constructor(
     private val idExtractor: IdExtractor
 ) {
 
-    suspend fun getPokemons(): List<Pokemon> {
+    suspend fun getPokemons(offSet: Int): List<Pokemon> {
 
-        val items = pokemonService.getPokemonListItems(20, 0).items
+        val items = pokemonService.getPokemonListItems(Limit, offSet).items
 
         return items.map {
             pokemonService.getPokemonDetail(idExtractor.getIdFromUrl(it.url))
@@ -81,3 +81,5 @@ class PokemonRepository @Inject constructor(
     private fun ApiType.ApiDamageRelation.ApiDamageRelationType.toDamageRelationType() =
         Pokemon.Type.DamageRelations.Type(idExtractor.getIdFromUrl(url), name)
 }
+
+private const val Limit = 30

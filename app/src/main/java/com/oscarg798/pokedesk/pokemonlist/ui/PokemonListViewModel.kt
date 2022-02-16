@@ -22,14 +22,25 @@ class PokemonListViewModel @Inject constructor(
         fetchPokemonListItems()
     }
 
-    private fun fetchPokemonListItems() {
+    fun fetchPokemonListItems() {
         launch {
             update { it.copy(loading = true) }
+
+            val currentState = currentState()
+
             val pokemonListItems = withContext(io) {
-                getPokemonListItems()
+                getPokemonListItems(currentState.pokemonListItems?.size ?: 0)
             }
 
-            update { it.copy(loading = false, pokemonListItems = pokemonListItems) }
+            update {
+                it.copy(
+                    loading = false,
+                    pokemonListItems = (
+                        currentState.pokemonListItems
+                            ?: emptyList()
+                        ) + pokemonListItems
+                )
+            }
         }
     }
 
