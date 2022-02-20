@@ -44,7 +44,7 @@ abstract class AbstractViewModel<ViewState, Event>(
         launch { update { state -> reducer(state) } }
     }
 
-    private fun currentState() = _state.replayCache.firstOrNull() ?: initialState
+    protected fun currentState() = _state.replayCache.firstOrNull() ?: initialState
 }
 
 fun <ViewState, Event> AbstractViewModel<ViewState, Event>.launch(

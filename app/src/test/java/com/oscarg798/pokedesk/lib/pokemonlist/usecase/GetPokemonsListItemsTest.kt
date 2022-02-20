@@ -1,4 +1,4 @@
-package com.oscarg798.pokedesk.lib.pokemonlist
+package com.oscarg798.pokedesk.lib.pokemonlist.usecase
 
 import androidx.compose.ui.graphics.Color
 import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
@@ -7,6 +7,7 @@ import com.oscarg798.pokedesk.lib.type.TypeRepository
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
 import io.mockk.coEvery
+import io.mockk.coVerify
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
@@ -31,7 +32,7 @@ class GetPokemonsListItemsTest {
     @Test
     fun `when invoke then it should return a list based on the pokemons returned by the repo sorted by its id`() =
         runTest {
-            coEvery { pokemonRepository.getPokemons() } answers {
+            coEvery { pokemonRepository.getPokemons(0) } answers {
                 listOf(
                     PokemonMock.copy(id = 25, name = "Charmander", image = "url2", order = 5),
                     PokemonMock
@@ -58,8 +59,10 @@ class GetPokemonsListItemsTest {
 
                     )
                 ),
-                usecase()
+                usecase(0)
             )
+
+            coVerify(exactly = 1) { pokemonRepository.getPokemons(0) }
         }
 }
 

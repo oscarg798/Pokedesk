@@ -50,7 +50,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
-        kotlinCompilerVersion '1.5.31'
     }
     packagingOptions {
         resources {
@@ -98,4 +97,5 @@ dependencies {
     testImplementation libs.mockk.base
     testImplementation libs.junit.base
     testImplementation libs.coroutines.test
+    testImplementation libs.turbine
 }
