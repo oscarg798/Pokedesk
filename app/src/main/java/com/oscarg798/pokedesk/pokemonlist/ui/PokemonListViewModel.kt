@@ -29,7 +29,7 @@ class PokemonListViewModel @Inject constructor(
             val currentState = currentState()
 
             val pokemonListItems = withContext(io) {
-                getPokemonListItems(currentState.pokemonListItems?.size ?: 0)
+                getPokemonListItems(currentState.pokemonListItems?.size ?: DefaultOffset)
             }
 
             update {
@@ -62,3 +62,4 @@ class PokemonListViewModel @Inject constructor(
 }
 
 private const val EmptyQuery = ""
+private const val DefaultOffset = 0

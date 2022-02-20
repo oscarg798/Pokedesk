@@ -35,18 +35,18 @@ class PokemonRepositoryTest {
 
     @Test
     fun `when get pokemons invoke then it should return the pokemons`() {
-        coEvery { pokemonService.getPokemonListItems(20, 0) } answers { APiPokemonListResultsMock }
+        coEvery { pokemonService.getPokemonListItems(30, 1) } answers { APiPokemonListResultsMock }
         coEvery { pokemonService.getPokemonDetail(3) } answers { ApiPokemonMock }
         coEvery { typeService.getTypeById(6) } answers { ApiTypeMock }
 
         runTest {
-            val result = repository.getPokemons()
+            val result = repository.getPokemons(1)
             Assert.assertEquals(listOf(PokemonMock), result)
         }
 
         coVerify {
             pokemonService.getPokemonDetail(3)
-            pokemonService.getPokemonListItems(20, 0)
+            pokemonService.getPokemonListItems(30, 1)
         }
     }
 }

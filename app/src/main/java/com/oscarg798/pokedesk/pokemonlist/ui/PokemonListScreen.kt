@@ -1,8 +1,11 @@
 package com.oscarg798.pokedesk.pokemonlist.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -14,31 +17,40 @@ import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavGraphBuilder
 import com.google.accompanist.placeholder.PlaceholderHighlight
 import com.google.accompanist.placeholder.placeholder
 import com.google.accompanist.placeholder.shimmer
+import com.oscarg798.pokedesk.R
 import com.oscarg798.pokedesk.lib.navigation.composable
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
+import kotlinx.coroutines.launch
 
 fun NavGraphBuilder.pokemonScreen() = composable(route = PokemonListRoute) {
     val viewModel: PokemonListViewModel = hiltViewModel(it)
@@ -100,23 +112,31 @@ private fun PokemonList(
     loading: Boolean,
     onBottomReached: () -> Unit
 ) {
+
+    val coroutineScope = rememberCoroutineScope()
+
+    val listState = rememberLazyListState()
+
+    val endOfListReached by remember {
+        derivedStateOf {
+            listState.isScrolledToEnd()
+        }
+    }
+
+    val goToTopButtonVisibility by remember {
+        derivedStateOf {
+            listState.firstVisibleItemIndex > 2
+        }
+    }
+
+    LaunchedEffect(endOfListReached) {
+        if (endOfListReached && !loading) {
+            onBottomReached()
+        }
+    }
+
     Column(Modifier.fillMaxSize()) {
-        val listState = rememberLazyListState()
-
-        val endOfListReached by remember {
-            derivedStateOf {
-                listState.isScrolledToEnd()
-            }
-        }
-
-        LaunchedEffect(endOfListReached) {
-            if (endOfListReached && !loading) {
-                onBottomReached()
-            }
-        }
-
-        PokemonListLazyColumn(
-            listState = listState,
+        Box(
             modifier = Modifier.weight(
                 if (loading) {
                     0.9f
@@ -125,23 +145,78 @@ private fun PokemonList(
                 }
             )
         ) {
-            items(
-                pokemonListItems,
-                key = { item ->
-                    item.id
+            PokemonListLazyColumn(
+                listState = listState,
+                modifier = Modifier.fillMaxSize()
+            ) {
+                items(
+                    pokemonListItems,
+                    key = { item ->
+                        item.id
+                    }
+                ) { item ->
+                    PokemonListCard(pokemon = item)
                 }
-            ) { item ->
-                PokemonListCard(pokemon = item)
+            }
+
+            if (goToTopButtonVisibility) {
+                IconButton(
+                    modifier = Modifier
+                        .padding(
+                            end = LocalAppDimens.current.Medium,
+                            bottom = LocalAppDimens.current.Large
+                        )
+                        .align(Alignment.BottomEnd)
+                        .background(
+                            MaterialTheme.colors.secondary.copy(alpha = .5f),
+                            shape = CircleShape
+                        )
+                        .size(50.dp),
+                    onClick = {
+                        coroutineScope.launch { listState.scrollToItem(FirstItem) }
+                    }
+                ) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.ic_up),
+                        contentDescription = "Go to the top of the list",
+                        tint = MaterialTheme.colors.onSecondary,
+                        modifier = Modifier
+                            .size(30.dp)
+                            .align(Alignment.Center)
+                    )
+                }
             }
         }
         if (loading) {
-            CircularProgressIndicator(
+            LoadingMoreContent(
                 Modifier
-                    .size(30.dp)
+                    .fillMaxWidth()
                     .weight(0.1f)
                     .align(Alignment.CenterHorizontally)
+                    .padding(top = LocalAppDimens.current.Medium)
             )
         }
+    }
+}
+
+@Composable
+private fun LoadingMoreContent(modifier: Modifier = Modifier) {
+    Row(
+        horizontalArrangement = Arrangement.Center,
+        modifier = modifier
+    ) {
+        CircularProgressIndicator(
+            Modifier
+                .size(20.dp)
+        )
+
+        Text(
+            text = "Loading more pokemons",
+            style = MaterialTheme.typography.body1.copy(
+                color = MaterialTheme.colors.onBackground
+            ),
+            modifier = Modifier.padding(start = LocalAppDimens.current.Small)
+        )
     }
 }
 
@@ -162,5 +237,6 @@ private fun PokemonListLazyColumn(
     }
 }
 
+private val FirstItem = 0
 private fun LazyListState.isScrolledToEnd() = layoutInfo.totalItemsCount > 0 &&
     layoutInfo.visibleItemsInfo.lastOrNull()?.index == layoutInfo.totalItemsCount - 1

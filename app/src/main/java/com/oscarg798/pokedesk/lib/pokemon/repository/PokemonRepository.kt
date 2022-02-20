@@ -1,6 +1,7 @@
 package com.oscarg798.pokedesk.lib.pokemon.repository
 
 import com.oscarg798.pokedesk.lib.pokemon.model.ApiPokemon
+import com.oscarg798.pokedesk.lib.pokemon.model.ApiPokemonListItem
 import com.oscarg798.pokedesk.lib.pokemon.model.ApiType
 import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
 import com.oscarg798.pokedesk.lib.pokemon.network.PokemonService
@@ -8,10 +9,10 @@ import com.oscarg798.pokedesk.lib.pokemon.utils.IdExtractor
 import com.oscarg798.pokedesk.lib.type.TypeService
 import javax.inject.Inject
 import javax.inject.Singleton
-import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.yield
 
 @Singleton
 class PokemonRepository @Inject constructor(
@@ -25,29 +26,32 @@ class PokemonRepository @Inject constructor(
         val items = pokemonService.getPokemonListItems(Limit, offSet).items
 
         return items.map {
-            pokemonService.getPokemonDetail(idExtractor.getIdFromUrl(it.url))
-        }.map {
-            it.toPokemon()
+            getPokemonDetail(it)
         }.awaitAll()
     }
 
-    private suspend fun ApiPokemon.toPokemon(): Deferred<Pokemon> = coroutineScope {
-        async {
-
-            Pokemon(
-                id = id,
-                name = name,
-                order = order,
-                height = height,
-                weight = weight,
-                stats = stats.map { it.toStat() }.toSet(),
-                image = image.getImageUrl(),
-                types = types.map {
-                    getType(it).toType()
-                }.toSet()
-            )
+    private suspend fun getPokemonDetail(
+        apiPokemonListItem: ApiPokemonListItem
+    ) = coroutineScope {
+        async() {
+            yield()
+            pokemonService.getPokemonDetail(idExtractor.getIdFromUrl(apiPokemonListItem.url))
+                .toPokemon()
         }
     }
+
+    private suspend fun ApiPokemon.toPokemon(): Pokemon = Pokemon(
+        id = id,
+        name = name,
+        order = order,
+        height = height,
+        weight = weight,
+        stats = stats.map { it.toStat() }.toSet(),
+        image = image.getImageUrl(),
+        types = types.map {
+            getType(it).toType()
+        }.toSet()
+    )
 
     private suspend fun getType(type: ApiPokemon.APIType): ApiType {
         return typeService.getTypeById(idExtractor.getIdFromUrl(type.detail.url))

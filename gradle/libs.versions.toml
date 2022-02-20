@@ -103,20 +103,20 @@ gson = "com.google.code.gson:gson:2.8.6"
 lokalise = "com.lokalise.android:sdk:2.0.0-beta-10"
 
 compose-activity = 'androidx.activity:activity-compose:1.4.0'
-compose-material = 'androidx.compose.material:material:1.0.5'
+compose-material = 'androidx.compose.material:material:1.1.0'
 compose-material3 = 'androidx.compose.material3:material3:1.0.0-alpha02'
-compose-animation = 'androidx.compose.animation:animation:1.0.5'
-compose-tooling = 'androidx.compose.ui:ui-tooling:1.0.5'
+compose-animation = 'androidx.compose.animation:animation:1.1.0'
+compose-tooling = 'androidx.compose.ui:ui-tooling:1.1.0'
 compose-viewmodel = 'androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07'
-compose-runtime = "androidx.compose.runtime:runtime:1.0.5"
-compose-runtimeLivedata = "androidx.compose.runtime:runtime-livedata:1.0.5"
+compose-runtime = "androidx.compose.runtime:runtime:1.1.0"
+compose-runtimeLivedata = "androidx.compose.runtime:runtime-livedata:1.1.0"
 compose-uiTest = "androidx.compose.ui:ui-test-junit4:1.0.1"
-compose-ui = "androidx.compose.ui:ui:1.0.5"
-compose-foundation = "androidx.compose.foundation:foundation:1.0.5"
-compose-icons = "androidx.compose.material:material-icons-core:1.0.5"
-compose-iconsExtended = "androidx.compose.material:material-icons-extended:1.0.5"
+compose-ui = "androidx.compose.ui:ui:1.1.0"
+compose-foundation = "androidx.compose.foundation:foundation:1.1.0"
+compose-icons = "androidx.compose.material:material-icons-core:1.1.0"
+compose-iconsExtended = "androidx.compose.material:material-icons-extended:1.1.0"
 compose-constraintLayout = "androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02"
-compose-compiler = "androidx.compose.compiler:compiler:1.0.5"
+compose-compiler = "androidx.compose.compiler:compiler:1.1.0"
 
 mockk-base = "io.mockk:mockk:1.12.0"
 mockk-android = "io.mockk:mockk-android:1.12.0"
@@ -168,11 +168,11 @@ workManager-ktx = "androidx.work:work-runtime-ktx:2.7.0-rc01"
 
 compose-dialogs = "io.github.vanpra.compose-material-dialogs:datetime:0.6.1"
 
-accompanist-pager = "com.google.accompanist:accompanist-pager:0.19.0"
-accompanist-pagerIndicator = "com.google.accompanist:accompanist-pager-indicators:0.19.0"
-accompanist-insets = "com.google.accompanist:accompanist-insets:0.19.0"
-accompanist-placeholder = "com.google.accompanist:accompanist-placeholder-material:0.19.0"
-accompanist-flowLayout = "com.google.accompanist:accompanist-flowlayout:0.19.0"
+accompanist-pager = "com.google.accompanist:accompanist-pager:0.23.0"
+accompanist-pagerIndicator = "com.google.accompanist:accompanist-pager-indicators:0.23.0"
+accompanist-insets = "com.google.accompanist:accompanist-insets:0.23.0"
+accompanist-placeholder = "com.google.accompanist:accompanist-placeholder-material:0.23.0"
+accompanist-flowLayout = "com.google.accompanist:accompanist-flowlayout:0.23.0"
 
 reorderable = "org.burnoutcrew.composereorderable:reorderable:0.7.0"
 
