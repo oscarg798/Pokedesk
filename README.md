@@ -7,4 +7,4 @@ https://www.behance.net/gallery/121956993/Pokedex-Mobile-Application?tracking_so
 Check the [Kanban](https://github.com/oscarg798/Pokedesk/projects/1), to collaborate 
 
 
-Concurrency Test  2
+Concurrency Test  23
