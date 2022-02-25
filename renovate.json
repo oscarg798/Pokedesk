@@ -22,5 +22,9 @@
   "npm": {
     "schedule": "at any time"
   },
+  "timezone": "Europe/Madrid",
+  "schedule": [
+    "at any time"
+  ],
   "rebaseWhen": "behind-base-branch",
 }
