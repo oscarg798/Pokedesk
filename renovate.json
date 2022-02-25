@@ -13,9 +13,6 @@
         "^org\\.jetbrains\\.kotlin:.*$",
         "^androidx\\.compose.*$"
       ],
-      "matchFiles": [
-        "(^|\\/)gradle\\/wrapper\\/gradle-wrapper\\.properties$"
-      ],
       "enabled": false
     }
   ],
