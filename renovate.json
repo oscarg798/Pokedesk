@@ -18,8 +18,8 @@
             "enabled": false
         },
         {
-            "matchFiles": [
-                "(^|\\/)gradle\\/wrapper\\/gradle-wrapper\\.properties$"
+            "matchPackagePatterns": [
+                "^.*services.gradle.org.*$"
             ],
             "enabled": false
         }
