@@ -4,7 +4,8 @@
     ],
     "groupName": "all",
     "separateMajorMinor": false,
-    "packageRules": [{
+    "packageRules": [
+        {
             "matchPackagePatterns": [
                 "*"
             ],
@@ -12,14 +13,15 @@
         },
         {
             "matchPackagePatterns": [
-                "^org\\.jetbrains\\.kotlin:.*$",
-                "^androidx\\.compose.*$"
+                "^androidx\\.navigation.*$"
             ],
-            "enabled": false
+            "groupName": "Navigation"
         },
         {
             "matchPackagePatterns": [
-                "^.*services.gradle.org.*$"
+                "^org\\.jetbrains\\.kotlin:.*$",
+                "^.*services.gradle.org.*$",
+                "^androidx\\.compose.*$"
             ],
             "enabled": false
         }
