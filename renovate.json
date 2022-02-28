@@ -26,9 +26,8 @@
         },
         {
             "matchPaths": [
-                "(^|\\/)gradle\\/wrapper\\/gradle-wrapper\\.properties$"
+                "gradle-wrapper.properties"
             ],
-            "groupName": "GradleWrapper",
             "enabled": false
         }
     ],
