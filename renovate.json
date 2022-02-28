@@ -18,8 +18,46 @@
         },
         {
             "matchPackagePatterns": [
+                "^androidx\\.room.*$"
+            ],
+            "groupName": "Room"
+        },
+        {
+            "matchPackagePatterns": [
+                "^androidx\\.work.*$"
+            ],
+            "groupName": "WorkManager"
+        },
+        {
+            "matchPackagePatterns": [
+                "^com\\.google\\.android\\.gms.*$"
+            ],
+            "groupName": "GMS"
+        },
+        {
+            "matchPackagePatterns": [
+                "^com\\.google\\.dagger.*$",
+                "^androidx\\.hilt.*$"
+                
+            ],
+            "groupName": "DAGGER"
+        },
+        {
+            "matchPackagePatterns": [
+                "^com\\.google\\.firebase.*$"
+            ],
+            "groupName": "Firebase"
+        },
+        {
+            "matchPackagePatterns": [
+                "^com\\.squareup\\.retrofit2.*$",
+                "^com\\.squareup\\.okhttp3.*$"
+            ],
+            "groupName": "Retrofit"
+        },
+        {
+            "matchPackagePatterns": [
                 "^org\\.jetbrains\\.kotlin:.*$",
-                "^.*services.gradle.org.*$",
                 "^androidx\\.compose.*$"
             ],
             "enabled": false
@@ -28,7 +66,7 @@
             "matchPaths": [
                 "gradle-wrapper.properties"
             ],
-            "enabled": false
+            "groupName": "GradleProperties"
         }
     ],
     "npm": {
