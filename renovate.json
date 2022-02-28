@@ -1,35 +1,35 @@
-
-   
 {
-  "extends": [
-    "config:base"
-  ],
-  "groupName": "all",
-  "separateMajorMinor": false,
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "groupName": "all"
+    "extends": [
+        "config:base"
+    ],
+    "groupName": "all",
+    "separateMajorMinor": false,
+    "packageRules": [{
+            "matchPackagePatterns": [
+                "*"
+            ],
+            "groupName": "all"
+        },
+        {
+            "matchPackagePatterns": [
+                "^org\\.jetbrains\\.kotlin:.*$",
+                "^androidx\\.compose.*$"
+            ],
+            "enabled": false
+        },
+        {
+            "matchFiles": [
+                "(^|\\/)gradle\\/wrapper\\/gradle-wrapper\\.properties$"
+            ],
+            "enabled": false
+        }
+    ],
+    "npm": {
+        "schedule": "at any time"
     },
-    {
-      "matchPackagePatterns": [
-        "^org\\.jetbrains\\.kotlin:.*$",
-        "^androidx\\.compose.*$"
-      ],
-      "matchFiles": [
-        "(^|\\/)gradle\\/wrapper\\/gradle-wrapper\\.properties$"
-      ],
-      "enabled": false
-    }
-  ],
-  "npm": {
-    "schedule": "at any time"
-  },
-  "timezone": "Europe/Madrid",
-  "schedule": [
-    "at any time"
-  ],
-  "rebaseWhen": "behind-base-branch"
+    "timezone": "Europe/Madrid",
+    "schedule": [
+        "at any time"
+    ],
+    "rebaseWhen": "behind-base-branch"
 }
