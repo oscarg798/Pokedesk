@@ -33,18 +33,19 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import com.google.accompanist.placeholder.PlaceholderHighlight
 import com.google.accompanist.placeholder.placeholder
 import com.google.accompanist.placeholder.shimmer
 import com.oscarg798.pokedesk.R
+import com.oscarg798.pokedesk.detail.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
@@ -52,36 +53,52 @@ import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import kotlinx.coroutines.launch
 
-fun NavGraphBuilder.pokemonScreen() = composable(route = PokemonListRoute) {
-    val viewModel: PokemonListViewModel = hiltViewModel(it)
+fun NavGraphBuilder.pokemonScreen(navController: NavController) =
+    composable(route = PokemonListRoute) {
+        val viewModel: PokemonListViewModel = hiltViewModel(it)
 
-    val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
+        val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
+        val events: PokemonListViewModel.Event? by viewModel.events.collectAsState(initial = null)
 
-    Scaffold(
-        topBar = {
-            SearchBar(
-                search = { viewModel.onSearch() },
-                onQueryUpdated = { submittedQuery ->
-                    viewModel.onQueryUpdated(query = submittedQuery)
-                },
-                currentQuery = state.currentSearchQuery,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(MaterialTheme.Dimensions.Small)
-            )
+        LaunchedEffect(key1 = events) {
+            val event = events ?: return@LaunchedEffect
+
+            if (event !is PokemonListViewModel.Event.NavigateToDetail) {
+                return@LaunchedEffect
+            }
+
+            PokemonDetailRoute.navigate(event.id, navController)
         }
-    ) {
-        when {
-            state.loading && state.pokemonListItems == null -> LoadingList()
-            state.pokemonListItems != null -> PokemonList(
-                pokemonListItems = state.pokemonListItems!!,
-                loading = state.loading
-            ) {
-                viewModel.fetchPokemonListItems()
+
+        Scaffold(
+            topBar = {
+                SearchBar(
+                    search = { viewModel.onSearch() },
+                    onQueryUpdated = { submittedQuery ->
+                        viewModel.onQueryUpdated(query = submittedQuery)
+                    },
+                    currentQuery = state.currentSearchQuery,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(MaterialTheme.Dimensions.Small)
+                )
+            }
+        ) {
+            when {
+                state.loading && state.pokemonListItems == null -> LoadingList()
+                state.pokemonListItems != null -> PokemonList(
+                    pokemonListItems = state.pokemonListItems!!,
+                    loading = state.loading,
+                    onBottomReached = {
+                        viewModel.fetchPokemonListItems()
+                    }
+                ) { id ->
+                    Int
+                    viewModel.onItemClicked(id)
+                }
             }
         }
     }
-}
 
 @Composable
 private fun LoadingList() {
@@ -110,7 +127,8 @@ private fun LoadingList() {
 private fun PokemonList(
     pokemonListItems: List<PokemonListItem>,
     loading: Boolean,
-    onBottomReached: () -> Unit
+    onBottomReached: () -> Unit,
+    onItemClicked: (Int) -> Unit
 ) {
 
     val coroutineScope = rememberCoroutineScope()
@@ -155,7 +173,9 @@ private fun PokemonList(
                         item.id
                     }
                 ) { item ->
-                    PokemonListCard(pokemon = item)
+                    PokemonListCard(pokemon = item) {
+                        onItemClicked(it)
+                    }
                 }
             }
 

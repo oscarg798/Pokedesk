@@ -4,6 +4,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.compose.runtime.Composable
 import androidx.core.net.toUri
+import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.navigation.NavDeepLink
@@ -28,8 +29,8 @@ abstract class Route(
 
     fun navigate(navController: NavController, arguments: Bundle? = null) {
         navController.navigate(
-            getDeeplinkNavigationRoute(arguments),
-            navOptions {
+            deepLink = getDeeplinkNavigationRoute(arguments),
+            navOptions = navOptions {
                 this.launchSingleTop = true
             }
         )
@@ -41,14 +42,15 @@ abstract class Route(
         }
     )
 
-    private fun getUriPattern() = "$DeepLinkUri/$uriPatternSuffix"
+    protected fun getUriPattern() = "$DeepLinkUri/$uriPatternSuffix"
 }
 
 fun <T : Route> NavGraphBuilder.composable(
     route: T,
+    arguments: List<NamedNavArgument> = emptyList(),
     content: @Composable (NavBackStackEntry) -> Unit
 ) {
-    composable(route.route, deepLinks = route.getDeepLinks()) {
+    composable(route.route, deepLinks = route.getDeepLinks(), arguments = arguments) {
         content(it)
     }
 }

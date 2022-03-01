@@ -4,6 +4,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven { url('https://repo1.maven.org/maven2/') }
+    }
+
+    pluginManagement {
+        repositories {
+            gradlePluginPortal()
+        }
     }
 }
 enableFeaturePreview("VERSION_CATALOGS")

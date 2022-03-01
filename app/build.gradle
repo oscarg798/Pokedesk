@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
     id 'dagger.hilt.android.plugin'
 
 }
@@ -98,4 +99,10 @@ dependencies {
     testImplementation libs.junit.base
     testImplementation libs.coroutines.test
     testImplementation libs.turbine
+
+    implementation libs.androidx.room.runtime
+    implementation libs.androidx.room.ktx
+    ksp libs.androidx.room.compiler
+
+    implementation 'io.github.bytebeats:compose-charts:0.1.1'
 }
