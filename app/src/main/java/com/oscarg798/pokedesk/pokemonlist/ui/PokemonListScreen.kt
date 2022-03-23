@@ -45,7 +45,7 @@ import com.google.accompanist.placeholder.PlaceholderHighlight
 import com.google.accompanist.placeholder.placeholder
 import com.google.accompanist.placeholder.shimmer
 import com.oscarg798.pokedesk.R
-import com.oscarg798.pokedesk.detail.PokemonDetailRoute
+import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
@@ -56,49 +56,53 @@ import kotlinx.coroutines.launch
 fun NavGraphBuilder.pokemonScreen(navController: NavController) =
     composable(route = PokemonListRoute) {
         val viewModel: PokemonListViewModel = hiltViewModel(it)
+        PokemonScreen(viewModel = viewModel, navController = navController)
+    }
 
-        val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
-        val events: PokemonListViewModel.Event? by viewModel.events.collectAsState(initial = null)
+@Composable
+fun PokemonScreen(viewModel: PokemonListViewModel, navController: NavController) {
+    val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
+    val events: PokemonListViewModel.Event? by viewModel.events.collectAsState(initial = null)
 
-        LaunchedEffect(key1 = events) {
-            val event = events ?: return@LaunchedEffect
+    LaunchedEffect(key1 = events) {
+        val event = events ?: return@LaunchedEffect
 
-            if (event !is PokemonListViewModel.Event.NavigateToDetail) {
-                return@LaunchedEffect
-            }
-
-            PokemonDetailRoute.navigate(event.id, navController)
+        if (event !is PokemonListViewModel.Event.NavigateToDetail) {
+            return@LaunchedEffect
         }
 
-        Scaffold(
-            topBar = {
-                SearchBar(
-                    search = { viewModel.onSearch() },
-                    onQueryUpdated = { submittedQuery ->
-                        viewModel.onQueryUpdated(query = submittedQuery)
-                    },
-                    currentQuery = state.currentSearchQuery,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(MaterialTheme.Dimensions.Small)
-                )
-            }
-        ) {
-            when {
-                state.loading && state.pokemonListItems == null -> LoadingList()
-                state.pokemonListItems != null -> PokemonList(
-                    pokemonListItems = state.pokemonListItems!!,
-                    loading = state.loading,
-                    onBottomReached = {
-                        viewModel.fetchPokemonListItems()
-                    }
-                ) { id ->
-                    Int
-                    viewModel.onItemClicked(id)
+        PokemonDetailRoute.navigate(event.id, navController)
+    }
+
+    Scaffold(
+        topBar = {
+            SearchBar(
+                search = { viewModel.onSearch() },
+                onQueryUpdated = { submittedQuery ->
+                    viewModel.onQueryUpdated(query = submittedQuery)
+                },
+                currentQuery = state.currentSearchQuery,
+                enabled = false,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(MaterialTheme.Dimensions.Small)
+            )
+        }
+    ) {
+        when {
+            state.loading && state.pokemonListItems == null -> LoadingList()
+            state.pokemonListItems != null -> PokemonList(
+                pokemonListItems = state.pokemonListItems!!,
+                loading = state.loading,
+                onBottomReached = {
+                    viewModel.fetchPokemonListItems()
                 }
+            ) { id ->
+                viewModel.onItemClicked(id)
             }
         }
     }
+}
 
 @Composable
 private fun LoadingList() {

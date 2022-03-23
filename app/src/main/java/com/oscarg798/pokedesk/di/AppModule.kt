@@ -21,26 +21,6 @@ import kotlinx.coroutines.Dispatchers
 @Module
 object AppModule {
 
-    @Singleton
-    @Provides
-    fun provideCoroutineContextProvider(): CoroutineContextProvider =
-        object : CoroutineContextProvider {
-            override val io: CoroutineContext
-                get() = Dispatchers.IO
-            override val computation: CoroutineContext
-                get() = Dispatchers.Default
-            override val main: CoroutineContext
-                get() = Dispatchers.Main
-        }
-
-    @Singleton
-    @Provides
-    fun provideDatabase(@ApplicationContext context: Context): PokeDexDatabase =
-        Room.databaseBuilder(
-            context,
-            PokeDexDatabase::class.java, PokeDexDatabase::class.java.name
-        ).build()
-
     @Reusable
     @Provides
     fun providePokemonDao(pokeDexDatabase: PokeDexDatabase): PokemonDao =
@@ -54,4 +34,34 @@ object AppModule {
     @Provides
     fun providePokemonStatDao(pokeDexDatabase: PokeDexDatabase): StatsDao =
         pokeDexDatabase.statDao()
+}
+
+@InstallIn(SingletonComponent::class)
+@Module
+object DatabaseModule {
+
+    @Singleton
+    @Provides
+    fun provideDatabase(@ApplicationContext context: Context): PokeDexDatabase =
+        Room.databaseBuilder(
+            context,
+            PokeDexDatabase::class.java, PokeDexDatabase::class.java.name
+        ).build()
+}
+
+@InstallIn(SingletonComponent::class)
+@Module
+object CoroutinesProviderModule {
+
+    @Singleton
+    @Provides
+    fun provideCoroutineContextProvider(): CoroutineContextProvider =
+        object : CoroutineContextProvider {
+            override val io: CoroutineContext
+                get() = Dispatchers.IO
+            override val computation: CoroutineContext
+                get() = Dispatchers.Default
+            override val main: CoroutineContext
+                get() = Dispatchers.Main
+        }
 }

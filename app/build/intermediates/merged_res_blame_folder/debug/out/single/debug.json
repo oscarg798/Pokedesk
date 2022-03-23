@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_pokedex_round.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxhdpi/ic_launcher_pokedex_round.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-hdpi_ic_launcher_pokedex_round.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-hdpi/ic_launcher_pokedex_round.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable_ic_pokeball_grayscale.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable/ic_pokeball_grayscale.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xhdpi_ic_launcher_pokedex_round.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xhdpi/ic_launcher_pokedex_round.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_pokedex.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxxhdpi/ic_launcher_pokedex.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/font_cabin_normal.ttf.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/font/cabin_normal.ttf"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/raw_type_colors.json.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/raw/type_colors.json"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable_ic_pokeball_color.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable/ic_pokeball_color.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable_ic_back.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/xml_network_security_config.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_pokedex.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxhdpi/ic_launcher_pokedex.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xhdpi_ic_launcher_pokedex.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xhdpi/ic_launcher_pokedex.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/drawable_ic_up.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/drawable/ic_up.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_pokedex_round.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxxhdpi/ic_launcher_pokedex_round.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_pokedex.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-anydpi-v26/ic_launcher_pokedex.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-mdpi_ic_launcher_pokedex.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-mdpi/ic_launcher_pokedex.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-hdpi_ic_launcher_pokedex.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-hdpi/ic_launcher_pokedex.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/font_cabin_regular.ttf.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/font/cabin_regular.ttf"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/font_cabin_bold.ttf.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/font/cabin_bold.ttf"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-mdpi_ic_launcher_pokedex_round.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-mdpi/ic_launcher_pokedex_round.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_pokedex_round.xml.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-anydpi-v26/ic_launcher_pokedex_round.xml"
+    },
+    {
+        "merged": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-merged_res-63:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/oscar.gallon/.gradle/daemon/7.3.3/com.oscarg798.pokedesk.app-main-65:/mipmap-xxhdpi/ic_launcher.webp"
+    }
+]

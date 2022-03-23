@@ -48,6 +48,30 @@ class PokemonRepository @Inject constructor(
         }
     }
 
+    suspend fun fetchPokemons(offSet: Int) = coroutineScope {
+        val items = pokemonService.getPokemonListItems(Limit, offSet).items
+
+        val pokemons = items.map {
+            getPokemonDetail(it)
+        }.awaitAll()
+
+        val pokemonEntities = pokemons.map { pokemon ->
+            pokemon.toPokemonEntitySavingStatsAndTypes()
+        }
+
+        pokemonDao.insert(pokemonEntities)
+    }
+
+    suspend fun getPokemonDetail(id: Int): Pokemon = coroutineScope {
+        launch {
+            ensureActive()
+            val pokemonEntity = fetchPokemonDetail(id).toPokemonEntitySavingStatsAndTypes()
+            pokemonDao.insert(pokemonEntity)
+        }
+
+        getPokemonEntitiyWithTypesAndStats(pokemonDao.getById(id)).toPokemon()
+    }
+
     private fun PokemonEntityWithTypesAndStats.toPokemon() = Pokemon(
         id = pokemonEntity.id,
         name = pokemonEntity.name,
@@ -88,20 +112,6 @@ class PokemonRepository @Inject constructor(
             )
         }
 
-    suspend fun fetchPokemons(offSet: Int) = coroutineScope {
-        val items = pokemonService.getPokemonListItems(Limit, offSet).items
-
-        val pokemons = items.map {
-            getPokemonDetail(it)
-        }.awaitAll()
-
-        val pokemonEntities = pokemons.map { pokemon ->
-            pokemon.toPokemonEntitySavingStatsAndTypes()
-        }
-
-        pokemonDao.insert(pokemonEntities)
-    }
-
     private suspend fun getPokemonDetail(
         apiPokemonListItem: ApiPokemonListItem
     ) = coroutineScope {
@@ -113,16 +123,6 @@ class PokemonRepository @Inject constructor(
 
     private suspend fun fetchPokemonDetail(id: Int): Pokemon {
         return pokemonService.getPokemonDetail(id).toPokemon()
-    }
-
-    suspend fun getPokemonDetail(id: Int): Pokemon = coroutineScope {
-        launch {
-            ensureActive()
-            val pokemonEntity = fetchPokemonDetail(id).toPokemonEntitySavingStatsAndTypes()
-            pokemonDao.insert(pokemonEntity)
-        }
-
-        getPokemonEntitiyWithTypesAndStats(pokemonDao.getById(id)).toPokemon()
     }
 
     private suspend fun ApiPokemon.toPokemon(): Pokemon = Pokemon(

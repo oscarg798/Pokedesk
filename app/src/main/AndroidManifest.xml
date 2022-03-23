@@ -10,7 +10,7 @@
         android:name=".PokeApp"
         android:roundIcon="@mipmap/ic_launcher_pokedex"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Splash">
+        android:theme="@style/Theme.Pokedesk">
         <activity
             android:name=".MainActivity"
             android:exported="true"

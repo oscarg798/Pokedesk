@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.oscarg798.pokedesk"
+4    android:versionCode="10110"
+5    android:versionName="1.0.1(10)" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.REORDER_TASKS" />
+12-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:24:5-72
+12-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:24:22-69
+13
+14    <queries>
+14-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:24:5-28:15
+15        <package android:name="androidx.test.orchestrator" />
+15-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:25:9-62
+15-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:25:18-59
+16        <package android:name="androidx.test.services" />
+16-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:26:9-58
+16-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:26:18-55
+17        <package android:name="com.google.android.apps.common.testing.services" />
+17-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:27:9-83
+17-->[androidx.test:runner:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/91a0d2793b760db17db6422464500c67/transformed/runner-1.4.0/AndroidManifest.xml:27:18-80
+18    </queries>
+19
+20    <application
+20-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:6:5-25:19
+21        android:name="com.oscarg798.pokedesk.PokeApp"
+21-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:10:9-32
+22        android:allowBackup="true"
+22-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/386d8acb107f53e3a37e3d829167cf15/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher_pokedex"
+26-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:8:9-51
+27        android:label="@string/app_name"
+27-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:9:9-41
+28        android:roundIcon="@mipmap/ic_launcher_pokedex"
+28-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:11:9-56
+29        android:supportsRtl="true"
+29-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:12:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.Pokedesk" >
+31-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:13:9-46
+32        <activity
+32-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:14:9-24:20
+33            android:name="com.oscarg798.pokedesk.MainActivity"
+33-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:15:13-41
+34            android:exported="true"
+34-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:16:13-36
+35            android:label="@string/app_name"
+35-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:17:13-45
+36            android:theme="@style/Theme.Splash" >
+36-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:18:13-48
+37            <intent-filter>
+37-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:19:13-23:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:17-69
+38-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:22:17-77
+40-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:22:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/c3cfebb18795af38b04a2771652eb772/transformed/ui-tooling-1.1.1/AndroidManifest.xml:25:9-27:39
+44            android:name="androidx.compose.ui.tooling.PreviewActivity"
+44-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/c3cfebb18795af38b04a2771652eb772/transformed/ui-tooling-1.1.1/AndroidManifest.xml:26:13-71
+45            android:exported="true" />
+45-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/c3cfebb18795af38b04a2771652eb772/transformed/ui-tooling-1.1.1/AndroidManifest.xml:27:13-36
+46        <activity
+46-->[androidx.compose.ui:ui-test-manifest:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/30c371f4f830bbe22e6e9f229a81fc09/transformed/ui-test-manifest-1.1.1/AndroidManifest.xml:25:9-27:39
+47            android:name="androidx.activity.ComponentActivity"
+47-->[androidx.compose.ui:ui-test-manifest:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/30c371f4f830bbe22e6e9f229a81fc09/transformed/ui-test-manifest-1.1.1/AndroidManifest.xml:26:13-63
+48            android:exported="true" />
+48-->[androidx.compose.ui:ui-test-manifest:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/30c371f4f830bbe22e6e9f229a81fc09/transformed/ui-test-manifest-1.1.1/AndroidManifest.xml:27:13-36
+49        <activity
+49-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:27:9-34:20
+50            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+50-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:28:13-99
+51            android:exported="true"
+51-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:29:13-36
+52            android:theme="@android:style/Theme" >
+52-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:30:13-49
+53            <intent-filter>
+53-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:17-69
+54-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:25-66
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:35:9-42:20
+58            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+58-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:36:13-95
+59            android:exported="true"
+59-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:37:13-36
+60            android:theme="@android:style/Theme" >
+60-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:38:13-49
+61            <intent-filter>
+61-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:17-69
+62-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:25-66
+63            </intent-filter>
+64        </activity>
+65        <activity
+65-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:43:9-50:20
+66            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+66-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:44:13-103
+67            android:exported="true"
+67-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:45:13-36
+68            android:theme="@android:style/Theme.Dialog" >
+68-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:46:13-56
+69            <intent-filter>
+69-->[androidx.test:core:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4f0eb94836db7badc857ee780fc51c0d/transformed/core-1.4.0/AndroidManifest.xml:31:13-33:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:17-69
+70-->/Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:25-66
+71            </intent-filter>
+72        </activity>
+73
+74        <provider
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+75            android:name="androidx.startup.InitializationProvider"
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+76            android:authorities="com.oscarg798.pokedesk.androidx-startup"
+76-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+77            android:exported="false" >
+77-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+78            <meta-data
+78-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+79                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+79-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+80                android:value="androidx.startup" />
+80-->[androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3828d5de6545ee580773f7f68621d31f/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+81            <meta-data
+81-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/113daadc52f33bb388307bc34fc20e8e/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+82                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+82-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/113daadc52f33bb388307bc34fc20e8e/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+83                android:value="androidx.startup" />
+83-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/113daadc52f33bb388307bc34fc20e8e/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+84            <meta-data
+84-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:31:13-33:52
+85                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+85-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:32:17-85
+86                android:value="androidx.startup" />
+86-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:33:17-49
+87        </provider>
+88
+89        <service
+89-->[androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/2c929b420cbdee9e82e129c402314936/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+90            android:name="androidx.room.MultiInstanceInvalidationService"
+90-->[androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/2c929b420cbdee9e82e129c402314936/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+91            android:directBootAware="true"
+91-->[androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/2c929b420cbdee9e82e129c402314936/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+92            android:exported="false" />
+92-->[androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/2c929b420cbdee9e82e129c402314936/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+93
+94        <receiver
+94-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:36:9-45:20
+95            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+95-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:37:13-76
+96            android:directBootAware="false"
+96-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:38:13-44
+97            android:enabled="true"
+97-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:39:13-35
+98            android:exported="true"
+98-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:40:13-36
+99            android:permission="android.permission.DUMP" >
+99-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:41:13-57
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:42:13-44:29
+101                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:17-91
+101-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0b8375ba9385691065ded1e8b08cc196/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:25-88
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>

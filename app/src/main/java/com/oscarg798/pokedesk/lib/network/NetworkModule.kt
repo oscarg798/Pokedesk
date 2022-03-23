@@ -46,6 +46,11 @@ object NetworkModule {
 
         return builder.build()
     }
+}
+
+@InstallIn(SingletonComponent::class)
+@Module
+object RetrofitModule {
 
     @Reusable
     @Provides

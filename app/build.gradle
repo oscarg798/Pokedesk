@@ -19,7 +19,7 @@ android {
         versionCode appVersionCode
         versionName appVersionName
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.oscarg798.pokedesk.utils.CustomTestRunner"
         vectorDrawables {
             useSupportLibrary true
         }
@@ -57,6 +57,19 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+
+    testOptions {
+        testOptions {
+           // execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        }
+
+        unitTests {
+            returnDefaultValues = true
+        }
+        adbOptions {
+            installOptions "-g"
+        }
+    }
 }
 
 dependencies {
@@ -91,6 +104,7 @@ dependencies {
     implementation libs.androidx.splashscreen
 
     implementation libs.hilt.android
+    implementation 'androidx.test:runner:1.4.0'
     kapt libs.hilt.androidCompiler
     kapt libs.hilt.dagger.compiler
 
@@ -99,6 +113,23 @@ dependencies {
     testImplementation libs.junit.base
     testImplementation libs.coroutines.test
     testImplementation libs.turbine
+
+    androidTestImplementation libs.mockWebServer
+    androidTestImplementation libs.hilt.androidTesting
+    androidTestImplementation libs.compose.uiTest
+
+    kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.40.5'
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.1")
+
+    androidTestImplementation libs.androidx.test.orchestrator
+    androidTestImplementation libs.androidx.test.rules
+    debugImplementation libs.androidx.test.core
+    androidTestImplementation libs.androidx.test.junit
+    androidTestImplementation libs.androidx.test.runner
+    androidTestImplementation libs.androidx.test.espresso.core
+    androidTestImplementation libs.mockk.android
+
+    androidTestImplementation 'androidx.test:runner:1.4.0'
 
     implementation libs.androidx.room.runtime
     implementation libs.androidx.room.ktx

@@ -1,5 +1,6 @@
 package com.oscarg798.pokedesk.lib
 
+import androidx.compose.ui.graphics.Color
 import com.google.gson.Gson
 import com.oscarg798.pokedesk.lib.pokemon.model.ApiPokemon
 import com.oscarg798.pokedesk.lib.pokemon.model.ApiPokemonListItem
@@ -8,6 +9,7 @@ import com.oscarg798.pokedesk.lib.pokemon.model.ApiType
 import com.oscarg798.pokedesk.lib.pokemon.model.Pokemon
 import com.oscarg798.pokedesk.lib.pokemon.model.PokemonEntity
 import com.oscarg798.pokedesk.lib.pokemon.model.TypeEntity
+import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import java.util.UUID
 import kotlin.random.Random
 
@@ -15,13 +17,13 @@ object PokemonGenerator {
 
     private val gson = Gson()
 
-    fun generatePokemon(): Pokemon = Pokemon(
+    fun generatePokemon(numberOfTypes: Int = 3): Pokemon = Pokemon(
         id = generateRandomValue(Int::class.java),
         name = generateRandomValue(String::class.java),
         order = generateRandomValue(Int::class.java),
         height = generateRandomValue(Int::class.java),
         weight = generateRandomValue(Int::class.java),
-        types = generatePokemonTypes(),
+        types = generatePokemonTypes(numberOfTypes),
         stats = generateStats(),
         image = generateRandomValue(String::class.java)
     )
@@ -46,7 +48,7 @@ object PokemonGenerator {
         name = generateRandomValue(String::class.java),
         order = generateRandomValue(Int::class.java),
         height = generateRandomValue(Int::class.java),
-        weight = generateRandomValue(String::class.java),
+        weight = generateRandomValue(Int::class.java),
         image = generateRandomValue(String::class.java)
     )
 
@@ -100,6 +102,22 @@ object PokemonGenerator {
         )
     )
 
+    fun generatePokemonListItems() = (0..Random.nextInt(3)).map {
+        PokemonListItem(
+            id = generateRandomValue(Int::class.java),
+            generateRandomValue(String::class.java),
+            generateRandomValue(Int::class.java),
+            generateRandomValue(String::class.java),
+            types = (0..Random.nextInt(3)).map {
+                PokemonListItem.Type(
+                    generateRandomValue(Int::class.java),
+                    generateRandomValue(String::class.java),
+                    if (it % 2 == 0) Color.Blue else Color.Gray
+                )
+            }.toSet()
+        )
+    }
+
     private fun generateRandomUrl() = "http://url/url/${Random.nextInt(3)}/"
 
     private fun generateAPIPokemonTypes() = listOf(
@@ -129,7 +147,7 @@ object PokemonGenerator {
         )
     }.toSet()
 
-    private fun generatePokemonTypes() = (0..Random.nextInt(3)).map {
+    private fun generatePokemonTypes(examples: Int = 3) = (0..Random.nextInt(examples)).map {
         Pokemon.Type(
             generateRandomValue(Int::class.java),
             generateRandomValue(String::class.java),
