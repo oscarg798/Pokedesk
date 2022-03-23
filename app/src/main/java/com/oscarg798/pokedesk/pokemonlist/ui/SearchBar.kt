@@ -25,9 +25,11 @@ fun SearchBar(
     onQueryUpdated: (String) -> Unit,
     currentQuery: String,
     search: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
 ) {
     TextField(
+        enabled = enabled,
         modifier = modifier,
         value = currentQuery,
         onValueChange = onQueryUpdated,

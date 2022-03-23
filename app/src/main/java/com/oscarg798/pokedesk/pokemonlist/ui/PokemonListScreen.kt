@@ -45,7 +45,7 @@ import com.google.accompanist.placeholder.PlaceholderHighlight
 import com.google.accompanist.placeholder.placeholder
 import com.google.accompanist.placeholder.shimmer
 import com.oscarg798.pokedesk.R
-import com.oscarg798.pokedesk.detail.PokemonDetailRoute
+import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
@@ -78,6 +78,7 @@ fun NavGraphBuilder.pokemonScreen(navController: NavController) =
                         viewModel.onQueryUpdated(query = submittedQuery)
                     },
                     currentQuery = state.currentSearchQuery,
+                    enabled = false,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(MaterialTheme.Dimensions.Small)

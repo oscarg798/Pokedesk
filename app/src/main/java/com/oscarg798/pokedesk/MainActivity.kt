@@ -10,8 +10,8 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.oscarg798.pokedesk.detail.ViewModelStore
-import com.oscarg798.pokedesk.detail.pokemonDetailScreen
+import com.oscarg798.pokedesk.detail.ui.pokemonDetailScreen
+import com.oscarg798.pokedesk.lib.ViewModelStore
 import com.oscarg798.pokedesk.lib.ui.PokeDeskTheme
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import com.oscarg798.pokedesk.pokemonlist.ui.pokemonScreen

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/oscar.gallon/Developer/Pokedesk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "/Users/oscar.gallon/.gradle/caches/transforms-3/8adfb485d32d1b601fdc38f7e00612b7/transformed/core-splashscreen-1.0.0-alpha02/res/values-v31/values-v31.xml",
+                    "from": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,581",
+                        "endLines": "9,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "576,805"
+                    }
+                }
+            ]
+        }
+    ]
+}
