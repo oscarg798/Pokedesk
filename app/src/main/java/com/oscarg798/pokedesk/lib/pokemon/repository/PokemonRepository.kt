@@ -129,8 +129,8 @@ class PokemonRepository @Inject constructor(
         id = id,
         name = name,
         order = order,
-        height = height,
-        weight = weight,
+        height = (height * DecimetersToMeterConversationRate).toInt(),
+        weight = (weight * HectogramsToKilogramsConversionRate).toInt(),
         stats = stats.map { it.toStat() }.toSet(),
         image = image.getImageUrl(),
         types = types.map {
@@ -277,4 +277,6 @@ class PokemonRepository @Inject constructor(
     )
 }
 
+private const val DecimetersToMeterConversationRate = .1f
+private const val HectogramsToKilogramsConversionRate = .1f
 private const val Limit = 30

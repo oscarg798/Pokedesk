@@ -21,10 +21,8 @@ data class PokemonEntity(
     val image: String
 ) {
 
-    @Entity
+    @Entity(primaryKeys = ["statId", "pokemonId"])
     data class Stat(
-        @PrimaryKey(autoGenerate = true)
-        val id: Int? = null,
         @ColumnInfo(name = "statId")
         val statId: Int,
         @ColumnInfo(name = "name")
