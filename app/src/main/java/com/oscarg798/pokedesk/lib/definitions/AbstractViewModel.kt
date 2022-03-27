@@ -15,7 +15,7 @@ abstract class AbstractViewModel<ViewState, Event>(
     private val coroutineContextProvider: CoroutineContextProvider
 ) : ViewModel(), CoroutineContextProvider by coroutineContextProvider {
 
-    private val _event = MutableSharedFlow<Event>(
+    protected val _event = MutableSharedFlow<Event>(
         extraBufferCapacity = 1
     )
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.oscarg798.pokedesk.lib.detail.GetPokemonDetailTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-27T14:45:06" hostname="C02DQ3C0MD6R" time="2.202">
+  <properties/>
+  <testcase name="when invoke then return detail" classname="com.oscarg798.pokedesk.lib.detail.GetPokemonDetailTest" time="2.202"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

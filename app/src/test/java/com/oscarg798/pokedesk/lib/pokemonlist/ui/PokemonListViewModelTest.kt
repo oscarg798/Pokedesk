@@ -1,17 +1,24 @@
 package com.oscarg798.pokedesk.lib.pokemonlist.ui
 
-import androidx.compose.ui.graphics.Color
 import app.cash.turbine.test
+import com.oscarg798.pokedesk.lib.PokemonGenerator
 import com.oscarg798.pokedesk.lib.definitions.CoroutineContextProvider
-import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
+import com.oscarg798.pokedesk.lib.generateRandomValue
 import com.oscarg798.pokedesk.pokemonlist.ui.PokemonListViewModel
+import com.oscarg798.pokedesk.pokemonlist.usecase.FetchPokemons
 import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
+import io.mockk.Called
+import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.every
+import io.mockk.just
 import io.mockk.mockk
 import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.StandardTestDispatcher
+import kotlinx.coroutines.test.advanceTimeBy
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import org.junit.Assert
@@ -22,6 +29,8 @@ class PokemonListViewModelTest {
 
     private val testDispatcher = StandardTestDispatcher()
     private val getPokemonListItems: GetPokemonListItems = mockk()
+
+    private val fetchPokemons: FetchPokemons = mockk()
 
     private val coroutineContextProvider = object : CoroutineContextProvider {
         override val io: CoroutineContext
@@ -36,100 +45,137 @@ class PokemonListViewModelTest {
     @Before
     fun setup() {
         Dispatchers.setMain(testDispatcher)
-        coEvery { getPokemonListItems(0) } answers { PokemonListItems }
 
         viewModel = PokemonListViewModel(
-            getPokemonListItems,
-            coroutineContextProvider
+            getPokemonListItems = getPokemonListItems,
+            fetchPokemons = fetchPokemons,
+            coroutineContextProvider = coroutineContextProvider
         )
     }
 
     @Test
-    fun `when view model is created then it should get the pokemons list items with offset 0`() = runTest {
-        assertInitialStatesAreEmitted()
+    fun `when view model is created and get pokemons return items then only items emitted`() =
+        runTest {
+            val pokemonListItems = PokemonGenerator.generatePokemonListItems()
+            every { getPokemonListItems() } answers { flowOf(pokemonListItems) }
 
-        coVerify(exactly = 1) {
-            getPokemonListItems(0)
+            viewModel.state.test {
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = false,
+                        currentSearchQuery = "",
+                        pokemonListItems = pokemonListItems
+                    ),
+                    awaitItem()
+                )
+            }
+
+            coVerify(exactly = 1) {
+                getPokemonListItems()
+                fetchPokemons wasNot Called
+            }
         }
-    }
 
     @Test
-    fun `when fetch pokemons is called then it should get the pokemons with the next offset based on the previous ones loaded`() = runTest {
-        val newPokemonItems = listOf(PokemonListItems.first().copy(id = 5, name = "Charizard"))
-        coEvery { getPokemonListItems(2) } answers { newPokemonItems }
+    fun `when view model is created and get pokemons return no items then loading emitted fetched called`() =
+        runTest {
+            every { getPokemonListItems() } answers { flowOf(listOf()) }
+            coEvery { fetchPokemons(0) } just Runs
 
-        assertInitialStatesAreEmitted()
+            viewModel.state.test {
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = true,
+                        currentSearchQuery = "",
+                        pokemonListItems = null
+                    ),
+                    awaitItem()
+                )
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = false,
+                        currentSearchQuery = "",
+                        pokemonListItems = null
+                    ),
+                    awaitItem()
+                )
+            }
 
-        viewModel.fetchPokemonListItems()
-
-        viewModel.state.test {
-            Assert.assertEquals(
-                PokemonListViewModel.State(
-                    loading = false,
-                    currentSearchQuery = "",
-                    pokemonListItems = PokemonListItems
-                ),
-                awaitItem()
-            )
-            Assert.assertEquals(
-                PokemonListViewModel.State(
-                    loading = true,
-                    currentSearchQuery = "",
-                    pokemonListItems = PokemonListItems
-                ),
-                awaitItem()
-            )
-            Assert.assertEquals(
-                PokemonListViewModel.State(
-                    loading = false,
-                    currentSearchQuery = "",
-                    pokemonListItems = PokemonListItems + newPokemonItems
-                ),
-                awaitItem()
-            )
+            coVerify(exactly = 1) {
+                getPokemonListItems()
+                fetchPokemons(0)
+            }
         }
 
-        coVerify(exactly = 1) { getPokemonListItems(0) }
-        coVerify(exactly = 1) { getPokemonListItems(2) }
-    }
+    @Test
+    fun `when fetch pokemons called then it should get pokemons based on the size of curretn state`() =
+        runTest {
+            val pokemonListItems = PokemonGenerator.generatePokemonListItems()
+            every { getPokemonListItems() } answers { flowOf(pokemonListItems) }
+            coEvery { fetchPokemons(pokemonListItems.size) } just Runs
 
-    private suspend fun assertInitialStatesAreEmitted() {
+            advanceTimeBy(1_000)
+            viewModel.fetchPokemonListItems()
+
+            viewModel.state.test {
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = false,
+                        currentSearchQuery = "",
+                        pokemonListItems = pokemonListItems
+                    ),
+                    awaitItem()
+                )
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = true,
+                        currentSearchQuery = "",
+                        pokemonListItems = pokemonListItems
+                    ),
+                    awaitItem()
+                )
+                Assert.assertEquals(
+                    PokemonListViewModel.State(
+                        loading = false,
+                        currentSearchQuery = "",
+                        pokemonListItems = pokemonListItems
+                    ),
+                    awaitItem()
+                )
+            }
+
+            coVerify(exactly = 1) {
+                getPokemonListItems()
+                fetchPokemons(pokemonListItems.size)
+            }
+        }
+
+    @Test
+    fun `when query is updated then state should reflect it`() = runTest {
+        val pokemonListItems = PokemonGenerator.generatePokemonListItems()
+        every { getPokemonListItems() } answers { flowOf(pokemonListItems) }
+        val query = generateRandomValue<String>(String::class.java)
+
+        advanceTimeBy(1_000)
+        viewModel.onQueryUpdated(query)
+
         viewModel.state.test {
             Assert.assertEquals(
                 PokemonListViewModel.State(
-                    loading = true,
+                    loading = false,
                     currentSearchQuery = "",
-                    pokemonListItems = null
+                    pokemonListItems = pokemonListItems
                 ),
                 awaitItem()
             )
             Assert.assertEquals(
                 PokemonListViewModel.State(
                     loading = false,
-                    currentSearchQuery = "",
-                    pokemonListItems = PokemonListItems
+                    currentSearchQuery = query,
+                    pokemonListItems = pokemonListItems
                 ),
                 awaitItem()
             )
         }
     }
 }
-
-private val PokemonListItems = listOf(
-    PokemonListItem(
-        id = 1,
-        name = "Venasour",
-        order = 3,
-        image = "url",
-        types = setOf(PokemonListItem.Type(36, "rock", Color(0xff000000)))
-
-    ),
-    PokemonListItem(
-        id = 25,
-        name = "Charmander",
-        order = 5,
-        image = "url2",
-        types = setOf(PokemonListItem.Type(36, "rock", Color(0xff000000)))
-
-    )
-)

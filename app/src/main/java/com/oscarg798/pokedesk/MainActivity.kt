@@ -4,11 +4,14 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.oscarg798.pokedesk.detail.ui.pokemonDetailScreen
+import com.oscarg798.pokedesk.lib.ViewModelStore
 import com.oscarg798.pokedesk.lib.ui.PokeDeskTheme
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import com.oscarg798.pokedesk.pokemonlist.ui.pokemonScreen
@@ -25,10 +28,15 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             val navController = rememberNavController()
+            val viewModelStore = remember { ViewModelStore() }
             PokeDeskTheme {
                 CompositionLocalProvider(LocalNavControllerProvider provides navController) {
-                    NavHost(navController = navController, startDestination = PokemonListRoute.route) {
-                        pokemonScreen()
+                    NavHost(
+                        navController = navController,
+                        startDestination = PokemonListRoute.route
+                    ) {
+                        pokemonScreen(navController)
+                        pokemonDetailScreen(viewModelStore)
                     }
                 }
             }

@@ -1,0 +1,485 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+MERGED from [com.google.accompanist:accompanist-placeholder-material:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3bc997a367d4c245007bf892a119cc1e/transformed/accompanist-placeholder-material-0.23.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6dd2fefe5ad4901e224e6e72214ed717/transformed/accompanist-flowlayout-0.23.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:17:1-30:12
+MERGED from [io.github.bytebeats:compose-charts:0.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/58775c0a8f1fdd80d10802b7e55190f9/transformed/compose-charts-0.1.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.material:material:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/c142cefd6ddab368f8849eee64ed80a6/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material3:material3:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/be33979c74b125ee796417355b89c2d8/transformed/material3-1.0.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/caca6e166e917ecaea6a9e5b74ae62e9/transformed/hilt-navigation-compose-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-compose:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/12e0e178b0351dc1f693d2081293f804/transformed/navigation-compose-2.4.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-compose:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6491ec073dfe7f299e538f5af3a2023b/transformed/activity-compose-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.skydoves:landscapist-fresco:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/f22d2e3e64e431b898fd752a00c6d47e/transformed/landscapist-fresco-1.4.4/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.material:material-ripple:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7fa635eb0fd0c6d0ec86e9f0578ed9c3/transformed/material-ripple-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.accompanist:accompanist-placeholder:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/da2764b484d90e538d7006f380604f0b/transformed/accompanist-placeholder-0.23.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.skydoves:landscapist:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/2a9ef704b05d2a635c69bde44ad4c880/transformed/landscapist-1.4.4/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.foundation:foundation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/735d7d138eb725dc34dc92a0a001afab/transformed/foundation-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material:material-icons-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e15ddd4c1c4e490135e3a46e2b63c81f/transformed/material-icons-core-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3007d2ff466387f6fd0915df4fb30ba9/transformed/animation-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/99e2b9589a4098d0c820ca9190471a3a/transformed/foundation-layout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/987221a4e49869790f040d3bdebfe6b4/transformed/ui-tooling-data-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cfae01b65ab5174daa64510c5cad098/transformed/lifecycle-viewmodel-compose-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/efb8820966b8039713d05e6ad1cac3dd/transformed/animation-core-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a74580ef3925d6c9ad3b408d5613c1b6/transformed/ui-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/370c9b60cea190536f26773045c9d8df/transformed/room-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-text:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/2a26c8cae3e7e1e5e7b4fb97098f2f88/transformed/ui-text-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8dde3b1a3517e5a3721c21578f4d84a6/transformed/ui-graphics-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f56009c0d78c4e8f488d0c5a512fce92/transformed/runtime-saveable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-unit:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0da287d505b55a8f83f72e978089ae26/transformed/ui-unit-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3d4e8f6d0b15a1bc1637ec6909a3f0a6/transformed/ui-geometry-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec955c54cc55de330b730a7a4608f0a2/transformed/ui-tooling-preview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.runtime:runtime:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9ed9b8515ed09b14c01d2bc490725823/transformed/runtime-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4df31deaf4f28930c9fd031949f4c036/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/dfb82ab99b6a090ca6eb48a26289eb83/transformed/navigation-runtime-ktx-2.4.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/382d95198e73db007717a7abc7bbf9cb/transformed/navigation-runtime-2.4.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dee6a0a6cef905747588fb47ef90ebf7/transformed/activity-ktx-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/2b0c56e2849f8b7f5737eb0c22cd58cc/transformed/navigation-common-ktx-2.4.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/acda571702f627c6aff506f80bd95295/transformed/navigation-common-2.4.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/4732e60055d14eea7a419a13f254eee9/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38e2043d02c24971cfffca0f091fe8c4/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b657e84f574b7812c61fca225dd0a85d/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/aa2a2039b1acb4820f2eb11207327b0f/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/oscar.gallon/.gradle/caches/transforms-3/8cd7f5c98a97dad33066e9bc5f66220b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1d3d274a51a650b1170265008ffdcd98/transformed/appcompat-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:hilt-android:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/eaaa02a562685d655b11ae1e53530faf/transformed/hilt-android-2.40.5/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6714cbb08bdc931f5d89fbe6be0696a1/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/oscar.gallon/.gradle/caches/transforms-3/ff4252f4aacce10cd7328b051fd6f794/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cd1ff401f729f52108ffbde75d1bc25/transformed/appcompat-resources-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6f1ddfa74d5e2386b012677a1bf1cf46/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b6c1f16aab342eabd35a42f5fff24ebe/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9107db444e61b88838eb00ab5cdfffd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c1f26088c101923553903a1a5495746/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/02008ffbca548ff41826564edab46882/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b4d020abbc65589c0cdd38dae2010a27/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/336ba8c73022f7bc2335114f5f82b8c5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7af459c58582c03264203159c2482dbd/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5455d8876a8f037444514c0896fd1b50/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.palette:palette-ktx:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a57600d53f856109b69bd87acd23efaa/transformed/palette-ktx-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.palette:palette:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9df88d7e3ee11fc3e2e0859a9eda8ccd/transformed/palette-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a250bbaa20b4f81fcbf9eebe36d1c17b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a616c67633bfdb758e395f94099c985e/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7989b0fdb41bf82811e88b4af3f92dd0/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8cb2bf277b6289f8545f51edb9a1ba42/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/34442f5a1c6a057fe6f4192518532b9a/transformed/activity-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0bcf01fa551154b6220044d0af2cf52/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/de4b66d607d02c8a58e35a202513f348/transformed/imagepipeline-okhttp3-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/8adfb485d32d1b601fdc38f7e00612b7/transformed/core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.compose.ui:ui-util:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3ed9ba47c79168dd235bf3e666f9c2d4/transformed/ui-util-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec2457b334f9d1ea2823798ac80ce096/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [io.github.aakira:napier-android-debug:1.4.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e236182bd0e318b169bf2f51918b0e97/transformed/napier-debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9b74677b396c824dc088210e346b1027/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/2dd912435404e770ac0e3f2eebbbaa9d/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3454fb5722586f06b388e125c35e26d3/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38a41f8edc080e7d75b52b0b9a98abfa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ada2f4df9aad422471f7c98e6c411d00/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:17:1-48:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d596c59f53fa7ceb026eac6d04a083f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e8bc8bb5ccb75fa0321a9e9adac13026/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1a29df4ca99958e6e21b59db93fff114/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/cdd051941f69a04288ed92cf3da9486f/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4d21c30fe8c165a5c15639baa1808b40/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/beb92891000b2ddc78e25f8208b3849f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a0c0887731527e3384b8230dee7fe851/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/341a2538bd93e7529dd9b7e764df338d/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d6d9d976e9d68dd74f5070934d247c0/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f2cca12b3858414fb58876a6b12da682/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/32c13b53d05bac60f282f635b456e0de/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/465b6b8671bf1f91789730cc45998288/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/63d98e3e93bc04a93a9184509ceb83b6/transformed/fresco-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/7265f1b1fd31bad951e35410b0a61949/transformed/dagger-lint-aar-2.40.5/AndroidManifest.xml:16:1-19:12
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dc730cc638834d6293c108eb3b944e4b/transformed/drawee-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3afaaf2fc6c4416fd79b180fd891eb61/transformed/nativeimagefilters-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/032d6ecdf66d5c192ffa848e63f1007a/transformed/memory-type-native-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/df518b42d7bf66ddb7ccd9382490f404/transformed/memory-type-java-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3550c7dfba65e7eaee633b4f729668fa/transformed/imagepipeline-native-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/bb748f01c259096071c1149319a1f798/transformed/memory-type-ashmem-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/65c2cdbc87c6da162f57d8bdbdb8e49e/transformed/imagepipeline-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a8a2339dcfecabe7e506b716c9f6c682/transformed/nativeimagetranscoder-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c98fbd7c1ae2175ecaa00b847644ade/transformed/imagepipeline-base-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0c6473de9901fce53a6b486b4c327f4/transformed/soloader-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/oscar.gallon/.gradle/caches/transforms-3/3aaab2b6b86774486b231bf4eba045de/transformed/soloader-0.10.1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8536c8e73a028321d4f4893c8727da04/transformed/middleware-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/d844a58accc24999caed6e5e1f3cca61/transformed/ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ca231cb16597aadf5d44ae33bbff379c/transformed/fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:6:5-25:19
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.android.material:material:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/aa2a2039b1acb4820f2eb11207327b0f/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/aa2a2039b1acb4820f2eb11207327b0f/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/oscar.gallon/.gradle/caches/transforms-3/8cd7f5c98a97dad33066e9bc5f66220b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/oscar.gallon/.gradle/caches/transforms-3/8cd7f5c98a97dad33066e9bc5f66220b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:25:5-46:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/beb92891000b2ddc78e25f8208b3849f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/beb92891000b2ddc78e25f8208b3849f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/oscar.gallon/.gradle/caches/transforms-3/3aaab2b6b86774486b231bf4eba045de/transformed/soloader-0.10.1/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/oscar.gallon/.gradle/caches/transforms-3/3aaab2b6b86774486b231bf4eba045de/transformed/soloader-0.10.1/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:11:9-56
+	android:icon
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:8:9-51
+	android:allowBackup
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:13:9-44
+	android:name
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:10:9-32
+activity#com.oscarg798.pokedesk.MainActivity
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:14:9-24:20
+	android:label
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:17:13-45
+	android:exported
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:16:13-36
+	android:theme
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:18:13-48
+	android:name
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:15:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+MERGED from [com.google.accompanist:accompanist-placeholder-material:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3bc997a367d4c245007bf892a119cc1e/transformed/accompanist-placeholder-material-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-placeholder-material:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3bc997a367d4c245007bf892a119cc1e/transformed/accompanist-placeholder-material-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6dd2fefe5ad4901e224e6e72214ed717/transformed/accompanist-flowlayout-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-flowlayout:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6dd2fefe5ad4901e224e6e72214ed717/transformed/accompanist-flowlayout-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [io.github.bytebeats:compose-charts:0.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/58775c0a8f1fdd80d10802b7e55190f9/transformed/compose-charts-0.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.github.bytebeats:compose-charts:0.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/58775c0a8f1fdd80d10802b7e55190f9/transformed/compose-charts-0.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.material:material:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/c142cefd6ddab368f8849eee64ed80a6/transformed/material-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/c142cefd6ddab368f8849eee64ed80a6/transformed/material-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material3:material3:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/be33979c74b125ee796417355b89c2d8/transformed/material3-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material3:material3:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/be33979c74b125ee796417355b89c2d8/transformed/material3-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/caca6e166e917ecaea6a9e5b74ae62e9/transformed/hilt-navigation-compose-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/caca6e166e917ecaea6a9e5b74ae62e9/transformed/hilt-navigation-compose-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/12e0e178b0351dc1f693d2081293f804/transformed/navigation-compose-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-compose:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/12e0e178b0351dc1f693d2081293f804/transformed/navigation-compose-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6491ec073dfe7f299e538f5af3a2023b/transformed/activity-compose-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-compose:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6491ec073dfe7f299e538f5af3a2023b/transformed/activity-compose-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.skydoves:landscapist-fresco:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/f22d2e3e64e431b898fd752a00c6d47e/transformed/landscapist-fresco-1.4.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.skydoves:landscapist-fresco:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/f22d2e3e64e431b898fd752a00c6d47e/transformed/landscapist-fresco-1.4.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.material:material-ripple:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7fa635eb0fd0c6d0ec86e9f0578ed9c3/transformed/material-ripple-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-ripple:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7fa635eb0fd0c6d0ec86e9f0578ed9c3/transformed/material-ripple-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-placeholder:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/da2764b484d90e538d7006f380604f0b/transformed/accompanist-placeholder-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-placeholder:0.23.0] /Users/oscar.gallon/.gradle/caches/transforms-3/da2764b484d90e538d7006f380604f0b/transformed/accompanist-placeholder-0.23.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.skydoves:landscapist:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/2a9ef704b05d2a635c69bde44ad4c880/transformed/landscapist-1.4.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.skydoves:landscapist:1.4.4] /Users/oscar.gallon/.gradle/caches/transforms-3/2a9ef704b05d2a635c69bde44ad4c880/transformed/landscapist-1.4.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.foundation:foundation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/735d7d138eb725dc34dc92a0a001afab/transformed/foundation-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/735d7d138eb725dc34dc92a0a001afab/transformed/foundation-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e15ddd4c1c4e490135e3a46e2b63c81f/transformed/material-icons-core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material-icons-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e15ddd4c1c4e490135e3a46e2b63c81f/transformed/material-icons-core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3007d2ff466387f6fd0915df4fb30ba9/transformed/animation-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3007d2ff466387f6fd0915df4fb30ba9/transformed/animation-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/99e2b9589a4098d0c820ca9190471a3a/transformed/foundation-layout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.foundation:foundation-layout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/99e2b9589a4098d0c820ca9190471a3a/transformed/foundation-layout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/987221a4e49869790f040d3bdebfe6b4/transformed/ui-tooling-data-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-data:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/987221a4e49869790f040d3bdebfe6b4/transformed/ui-tooling-data-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cfae01b65ab5174daa64510c5cad098/transformed/lifecycle-viewmodel-compose-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cfae01b65ab5174daa64510c5cad098/transformed/lifecycle-viewmodel-compose-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/efb8820966b8039713d05e6ad1cac3dd/transformed/animation-core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/efb8820966b8039713d05e6ad1cac3dd/transformed/animation-core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a74580ef3925d6c9ad3b408d5613c1b6/transformed/ui-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a74580ef3925d6c9ad3b408d5613c1b6/transformed/ui-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/370c9b60cea190536f26773045c9d8df/transformed/room-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/370c9b60cea190536f26773045c9d8df/transformed/room-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/2a26c8cae3e7e1e5e7b4fb97098f2f88/transformed/ui-text-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-text:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/2a26c8cae3e7e1e5e7b4fb97098f2f88/transformed/ui-text-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8dde3b1a3517e5a3721c21578f4d84a6/transformed/ui-graphics-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8dde3b1a3517e5a3721c21578f4d84a6/transformed/ui-graphics-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f56009c0d78c4e8f488d0c5a512fce92/transformed/runtime-saveable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime-saveable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f56009c0d78c4e8f488d0c5a512fce92/transformed/runtime-saveable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0da287d505b55a8f83f72e978089ae26/transformed/ui-unit-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-unit:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/0da287d505b55a8f83f72e978089ae26/transformed/ui-unit-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3d4e8f6d0b15a1bc1637ec6909a3f0a6/transformed/ui-geometry-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-geometry:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3d4e8f6d0b15a1bc1637ec6909a3f0a6/transformed/ui-geometry-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec955c54cc55de330b730a7a4608f0a2/transformed/ui-tooling-preview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec955c54cc55de330b730a7a4608f0a2/transformed/ui-tooling-preview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9ed9b8515ed09b14c01d2bc490725823/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.runtime:runtime:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9ed9b8515ed09b14c01d2bc490725823/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4df31deaf4f28930c9fd031949f4c036/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4df31deaf4f28930c9fd031949f4c036/transformed/hilt-navigation-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/dfb82ab99b6a090ca6eb48a26289eb83/transformed/navigation-runtime-ktx-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/dfb82ab99b6a090ca6eb48a26289eb83/transformed/navigation-runtime-ktx-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/382d95198e73db007717a7abc7bbf9cb/transformed/navigation-runtime-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/382d95198e73db007717a7abc7bbf9cb/transformed/navigation-runtime-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dee6a0a6cef905747588fb47ef90ebf7/transformed/activity-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dee6a0a6cef905747588fb47ef90ebf7/transformed/activity-ktx-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/2b0c56e2849f8b7f5737eb0c22cd58cc/transformed/navigation-common-ktx-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/2b0c56e2849f8b7f5737eb0c22cd58cc/transformed/navigation-common-ktx-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/acda571702f627c6aff506f80bd95295/transformed/navigation-common-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.0-rc01] /Users/oscar.gallon/.gradle/caches/transforms-3/acda571702f627c6aff506f80bd95295/transformed/navigation-common-2.4.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/4732e60055d14eea7a419a13f254eee9/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/4732e60055d14eea7a419a13f254eee9/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38e2043d02c24971cfffca0f091fe8c4/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38e2043d02c24971cfffca0f091fe8c4/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b657e84f574b7812c61fca225dd0a85d/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b657e84f574b7812c61fca225dd0a85d/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/aa2a2039b1acb4820f2eb11207327b0f/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/aa2a2039b1acb4820f2eb11207327b0f/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/oscar.gallon/.gradle/caches/transforms-3/8cd7f5c98a97dad33066e9bc5f66220b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/oscar.gallon/.gradle/caches/transforms-3/8cd7f5c98a97dad33066e9bc5f66220b/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1d3d274a51a650b1170265008ffdcd98/transformed/appcompat-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1d3d274a51a650b1170265008ffdcd98/transformed/appcompat-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:hilt-android:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/eaaa02a562685d655b11ae1e53530faf/transformed/hilt-android-2.40.5/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/eaaa02a562685d655b11ae1e53530faf/transformed/hilt-android-2.40.5/AndroidManifest.xml:18:3-42
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6714cbb08bdc931f5d89fbe6be0696a1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6714cbb08bdc931f5d89fbe6be0696a1/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/oscar.gallon/.gradle/caches/transforms-3/ff4252f4aacce10cd7328b051fd6f794/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/oscar.gallon/.gradle/caches/transforms-3/ff4252f4aacce10cd7328b051fd6f794/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cd1ff401f729f52108ffbde75d1bc25/transformed/appcompat-resources-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9cd1ff401f729f52108ffbde75d1bc25/transformed/appcompat-resources-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6f1ddfa74d5e2386b012677a1bf1cf46/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6f1ddfa74d5e2386b012677a1bf1cf46/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b6c1f16aab342eabd35a42f5fff24ebe/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b6c1f16aab342eabd35a42f5fff24ebe/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9107db444e61b88838eb00ab5cdfffd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9107db444e61b88838eb00ab5cdfffd6/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c1f26088c101923553903a1a5495746/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c1f26088c101923553903a1a5495746/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/02008ffbca548ff41826564edab46882/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/02008ffbca548ff41826564edab46882/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b4d020abbc65589c0cdd38dae2010a27/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/b4d020abbc65589c0cdd38dae2010a27/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/336ba8c73022f7bc2335114f5f82b8c5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/336ba8c73022f7bc2335114f5f82b8c5/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7af459c58582c03264203159c2482dbd/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7af459c58582c03264203159c2482dbd/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5455d8876a8f037444514c0896fd1b50/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5455d8876a8f037444514c0896fd1b50/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette-ktx:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a57600d53f856109b69bd87acd23efaa/transformed/palette-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette-ktx:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a57600d53f856109b69bd87acd23efaa/transformed/palette-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9df88d7e3ee11fc3e2e0859a9eda8ccd/transformed/palette-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9df88d7e3ee11fc3e2e0859a9eda8ccd/transformed/palette-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a250bbaa20b4f81fcbf9eebe36d1c17b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a250bbaa20b4f81fcbf9eebe36d1c17b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a616c67633bfdb758e395f94099c985e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a616c67633bfdb758e395f94099c985e/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7989b0fdb41bf82811e88b4af3f92dd0/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/7989b0fdb41bf82811e88b4af3f92dd0/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8cb2bf277b6289f8545f51edb9a1ba42/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8cb2bf277b6289f8545f51edb9a1ba42/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/34442f5a1c6a057fe6f4192518532b9a/transformed/activity-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/34442f5a1c6a057fe6f4192518532b9a/transformed/activity-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/oscar.gallon/.gradle/caches/transforms-3/49debddc5746a03e2efcab02231ec17a/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0bcf01fa551154b6220044d0af2cf52/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0bcf01fa551154b6220044d0af2cf52/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/de4b66d607d02c8a58e35a202513f348/transformed/imagepipeline-okhttp3-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/de4b66d607d02c8a58e35a202513f348/transformed/imagepipeline-okhttp3-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/8adfb485d32d1b601fdc38f7e00612b7/transformed/core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-alpha02] /Users/oscar.gallon/.gradle/caches/transforms-3/8adfb485d32d1b601fdc38f7e00612b7/transformed/core-splashscreen-1.0.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3ed9ba47c79168dd235bf3e666f9c2d4/transformed/ui-util-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-util:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3ed9ba47c79168dd235bf3e666f9c2d4/transformed/ui-util-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec2457b334f9d1ea2823798ac80ce096/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ec2457b334f9d1ea2823798ac80ce096/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [io.github.aakira:napier-android-debug:1.4.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e236182bd0e318b169bf2f51918b0e97/transformed/napier-debug/AndroidManifest.xml:7:5-9:41
+MERGED from [io.github.aakira:napier-android-debug:1.4.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e236182bd0e318b169bf2f51918b0e97/transformed/napier-debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9b74677b396c824dc088210e346b1027/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9b74677b396c824dc088210e346b1027/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/2dd912435404e770ac0e3f2eebbbaa9d/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/2dd912435404e770ac0e3f2eebbbaa9d/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3454fb5722586f06b388e125c35e26d3/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3454fb5722586f06b388e125c35e26d3/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38a41f8edc080e7d75b52b0b9a98abfa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/38a41f8edc080e7d75b52b0b9a98abfa/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ada2f4df9aad422471f7c98e6c411d00/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ada2f4df9aad422471f7c98e6c411d00/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d596c59f53fa7ceb026eac6d04a083f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d596c59f53fa7ceb026eac6d04a083f/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e8bc8bb5ccb75fa0321a9e9adac13026/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/oscar.gallon/.gradle/caches/transforms-3/e8bc8bb5ccb75fa0321a9e9adac13026/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1a29df4ca99958e6e21b59db93fff114/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/1a29df4ca99958e6e21b59db93fff114/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/cdd051941f69a04288ed92cf3da9486f/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/cdd051941f69a04288ed92cf3da9486f/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4d21c30fe8c165a5c15639baa1808b40/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/oscar.gallon/.gradle/caches/transforms-3/4d21c30fe8c165a5c15639baa1808b40/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/beb92891000b2ddc78e25f8208b3849f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oscar.gallon/.gradle/caches/transforms-3/beb92891000b2ddc78e25f8208b3849f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a0c0887731527e3384b8230dee7fe851/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a0c0887731527e3384b8230dee7fe851/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/341a2538bd93e7529dd9b7e764df338d/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/341a2538bd93e7529dd9b7e764df338d/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d6d9d976e9d68dd74f5070934d247c0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/5d6d9d976e9d68dd74f5070934d247c0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f2cca12b3858414fb58876a6b12da682/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/f2cca12b3858414fb58876a6b12da682/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/32c13b53d05bac60f282f635b456e0de/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/32c13b53d05bac60f282f635b456e0de/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/465b6b8671bf1f91789730cc45998288/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/465b6b8671bf1f91789730cc45998288/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/63d98e3e93bc04a93a9184509ceb83b6/transformed/fresco-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/63d98e3e93bc04a93a9184509ceb83b6/transformed/fresco-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/7265f1b1fd31bad951e35410b0a61949/transformed/dagger-lint-aar-2.40.5/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.40.5] /Users/oscar.gallon/.gradle/caches/transforms-3/7265f1b1fd31bad951e35410b0a61949/transformed/dagger-lint-aar-2.40.5/AndroidManifest.xml:18:3-42
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dc730cc638834d6293c108eb3b944e4b/transformed/drawee-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/dc730cc638834d6293c108eb3b944e4b/transformed/drawee-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3afaaf2fc6c4416fd79b180fd891eb61/transformed/nativeimagefilters-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3afaaf2fc6c4416fd79b180fd891eb61/transformed/nativeimagefilters-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/032d6ecdf66d5c192ffa848e63f1007a/transformed/memory-type-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/032d6ecdf66d5c192ffa848e63f1007a/transformed/memory-type-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/df518b42d7bf66ddb7ccd9382490f404/transformed/memory-type-java-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/df518b42d7bf66ddb7ccd9382490f404/transformed/memory-type-java-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3550c7dfba65e7eaee633b4f729668fa/transformed/imagepipeline-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/3550c7dfba65e7eaee633b4f729668fa/transformed/imagepipeline-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/bb748f01c259096071c1149319a1f798/transformed/memory-type-ashmem-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/bb748f01c259096071c1149319a1f798/transformed/memory-type-ashmem-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/65c2cdbc87c6da162f57d8bdbdb8e49e/transformed/imagepipeline-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/65c2cdbc87c6da162f57d8bdbdb8e49e/transformed/imagepipeline-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a8a2339dcfecabe7e506b716c9f6c682/transformed/nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/a8a2339dcfecabe7e506b716c9f6c682/transformed/nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c98fbd7c1ae2175ecaa00b847644ade/transformed/imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9c98fbd7c1ae2175ecaa00b847644ade/transformed/imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0c6473de9901fce53a6b486b4c327f4/transformed/soloader-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e0c6473de9901fce53a6b486b4c327f4/transformed/soloader-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/oscar.gallon/.gradle/caches/transforms-3/3aaab2b6b86774486b231bf4eba045de/transformed/soloader-0.10.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/oscar.gallon/.gradle/caches/transforms-3/3aaab2b6b86774486b231bf4eba045de/transformed/soloader-0.10.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8536c8e73a028321d4f4893c8727da04/transformed/middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8536c8e73a028321d4f4893c8727da04/transformed/middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/d844a58accc24999caed6e5e1f3cca61/transformed/ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/d844a58accc24999caed6e5e1f3cca61/transformed/ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ca231cb16597aadf5d44ae33bbff379c/transformed/fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/oscar.gallon/.gradle/caches/transforms-3/ca231cb16597aadf5d44ae33bbff379c/transformed/fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		ADDED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscar.gallon/Developer/Pokedesk/app/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:25:9-27:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/8bef46be30ea350d0dfcad3dc7f5a54b/transformed/ui-tooling-1.1.0/AndroidManifest.xml:26:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/e3b0b649ea9ca57b3d13d05cede93475/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/oscar.gallon/.gradle/caches/transforms-3/16d7fba02a3e001aa6529665f5faba6a/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/oscar.gallon/.gradle/caches/transforms-3/6ac92d7b83db6e8717a2984c33d54150/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.2] /Users/oscar.gallon/.gradle/caches/transforms-3/5213afc7cf0c9c08ce59ff6d43ccdab0/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:32:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:36:9-45:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:39:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:40:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:41:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:37:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:42:13-44:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.1.0] /Users/oscar.gallon/.gradle/caches/transforms-3/9245dabf8fa4cee59f666befa4abefae/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:25-88

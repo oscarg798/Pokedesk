@@ -4,14 +4,17 @@ import com.oscarg798.pokedesk.lib.definitions.AbstractViewModel
 import com.oscarg798.pokedesk.lib.definitions.CoroutineContextProvider
 import com.oscarg798.pokedesk.lib.definitions.launch
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
+import com.oscarg798.pokedesk.pokemonlist.usecase.FetchPokemons
 import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext
 
 @HiltViewModel
 class PokemonListViewModel @Inject constructor(
     private val getPokemonListItems: GetPokemonListItems,
+    private val fetchPokemons: FetchPokemons,
     coroutineContextProvider: CoroutineContextProvider
 ) : AbstractViewModel<PokemonListViewModel.State, PokemonListViewModel.Event>(
     initialState = State(),
@@ -19,7 +22,7 @@ class PokemonListViewModel @Inject constructor(
 ) {
 
     init {
-        fetchPokemonListItems()
+        getPokemons()
     }
 
     fun fetchPokemonListItems() {
@@ -28,20 +31,34 @@ class PokemonListViewModel @Inject constructor(
 
             val currentState = currentState()
 
-            val pokemonListItems = withContext(io) {
-                getPokemonListItems(currentState.pokemonListItems?.size ?: DefaultOffset)
+            withContext(io) {
+                fetchPokemons(currentState.pokemonListItems?.size ?: DefaultOffset)
             }
 
             update {
-                it.copy(
-                    loading = false,
-                    pokemonListItems = (
-                        currentState.pokemonListItems
-                            ?: emptyList()
-                        ) + pokemonListItems
-                )
+                it.copy(loading = false)
             }
         }
+    }
+
+    private fun getPokemons() {
+        launch {
+            getPokemonListItems()
+                .flowOn(io)
+                .collect { pokemonListItems ->
+                    if (pokemonListItems.isEmpty()) {
+                        fetchPokemonListItems()
+                    } else {
+                        update {
+                            it.copy(pokemonListItems = pokemonListItems, loading = false)
+                        }
+                    }
+                }
+        }
+    }
+
+    fun onItemClicked(id: Int) {
+        _event.tryEmit(Event.NavigateToDetail(id))
     }
 
     fun onQueryUpdated(query: String) {
@@ -53,12 +70,14 @@ class PokemonListViewModel @Inject constructor(
     }
 
     data class State(
-        val loading: Boolean = false,
+        val loading: Boolean = true,
         val currentSearchQuery: String = EmptyQuery,
         val pokemonListItems: List<PokemonListItem>? = null
     )
 
-    sealed interface Event
+    sealed interface Event {
+        data class NavigateToDetail(val id: Int) : Event
+    }
 }
 
 private const val EmptyQuery = ""
