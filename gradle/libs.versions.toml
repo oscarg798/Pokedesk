@@ -56,8 +56,8 @@ retrofit2-adapter = "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
 retrofit2-converter = "com.squareup.retrofit2:converter-gson:2.9.0"
 retrofit2-scarlars = "com.squareup.retrofit2:converter-scalars:2.9.0"
 
-okhttp3-base = "com.squareup.okhttp3:okhttp:4.9.1"
-okhttp3-logging = "com.squareup.okhttp3:logging-interceptor:4.9.1"
+okhttp3-base = "com.squareup.okhttp3:okhttp:4.9.3"
+okhttp3-logging = "com.squareup.okhttp3:logging-interceptor:4.9.3"
 
 epoxy-epoxy = "com.airbnb.android:epoxy:4.6.2"
 epoxy-processor = "com.airbnb.android:epoxy-processor:4.6.2"
