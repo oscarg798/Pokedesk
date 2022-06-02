@@ -18,6 +18,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -55,17 +56,29 @@ fun NavGraphBuilder.pokemonDetailScreen(
     val activity = LocalContext.current as Activity
     val id = backStackEntry.arguments!!
         .getInt(PokemonDetailRoute.IdArgument)
-    val navController = LocalNavControllerProvider.current
 
     val viewModel: PokemonDetailViewModel = viewModelStore.get("${PokemonDetailKey}_$id") {
         getViewModel(id, activity)
     } as PokemonDetailViewModel
 
-    val state = viewModel.state.collectAsState(initial = PokemonDetailViewModel.State())
+    val state by viewModel.state.collectAsState(initial = PokemonDetailViewModel.State())
 
-    val pokemon = state.value.pokemon ?: return@composable
+    PokemonDetailScreen(
+        state = state,
+        modifier = Modifier.verticalScroll(rememberScrollState())
+    )
+}
 
-    val scrollState = rememberScrollState()
+@Composable
+internal fun PokemonDetailScreen(
+    state: PokemonDetailViewModel.State,
+    modifier: Modifier
+) {
+
+    val pokemon = state.pokemon ?: return
+
+    val navController = LocalNavControllerProvider.current
+
     Scaffold(
         topBar = {
             Row(
@@ -104,8 +117,7 @@ fun NavGraphBuilder.pokemonDetailScreen(
         }
     ) {
         Column(
-            Modifier
-                .verticalScroll(scrollState)
+            modifier
                 .fillMaxWidth()
                 .padding(MaterialTheme.Dimensions.Medium)
         ) {

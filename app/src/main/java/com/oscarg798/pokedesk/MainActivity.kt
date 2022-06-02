@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         startDestination = PokemonListRoute.route
                     ) {
-                        pokemonScreen(navController)
+                        pokemonScreen()
                         pokemonDetailScreen(viewModelStore)
                     }
                 }

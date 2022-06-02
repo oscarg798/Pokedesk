@@ -1,7 +1,7 @@
 [libraries]
 
-kotlin-stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.21"
-kotlin-reflect = "org.jetbrains.kotlin:kotlin-reflect:1.5.21"
+kotlin-stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"
+kotlin-reflect = "org.jetbrains.kotlin:kotlin-reflect:1.6.10"
 
 androidx-appcompat = "androidx.appcompat:appcompat:1.4.0"
 androidx-coreKtx = "androidx.core:core-ktx:1.7.0"
@@ -58,6 +58,7 @@ retrofit2-scarlars = "com.squareup.retrofit2:converter-scalars:2.9.0"
 
 okhttp3-base = "com.squareup.okhttp3:okhttp:4.9.1"
 okhttp3-logging = "com.squareup.okhttp3:logging-interceptor:4.9.1"
+mockWebServer = "com.squareup.okhttp3:mockwebserver:4.9.1"
 
 epoxy-epoxy = "com.airbnb.android:epoxy:4.6.2"
 epoxy-processor = "com.airbnb.android:epoxy-processor:4.6.2"
@@ -103,20 +104,21 @@ gson = "com.google.code.gson:gson:2.8.6"
 lokalise = "com.lokalise.android:sdk:2.0.0-beta-10"
 
 compose-activity = 'androidx.activity:activity-compose:1.4.0'
-compose-material = 'androidx.compose.material:material:1.1.0'
+compose-material = 'androidx.compose.material:material:1.1.1'
 compose-material3 = 'androidx.compose.material3:material3:1.0.0-alpha02'
-compose-animation = 'androidx.compose.animation:animation:1.1.0'
-compose-tooling = 'androidx.compose.ui:ui-tooling:1.1.0'
+compose-animation = 'androidx.compose.animation:animation:1.1.1'
+compose-tooling = 'androidx.compose.ui:ui-tooling:1.1.1'
 compose-viewmodel = 'androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07'
-compose-runtime = "androidx.compose.runtime:runtime:1.1.0"
-compose-runtimeLivedata = "androidx.compose.runtime:runtime-livedata:1.1.0"
+compose-runtime = "androidx.compose.runtime:runtime:1.1.1"
+compose-runtimeLivedata = "androidx.compose.runtime:runtime-livedata:1.1.1"
 compose-uiTest = "androidx.compose.ui:ui-test-junit4:1.0.1"
-compose-ui = "androidx.compose.ui:ui:1.1.0"
-compose-foundation = "androidx.compose.foundation:foundation:1.1.0"
-compose-icons = "androidx.compose.material:material-icons-core:1.1.0"
-compose-iconsExtended = "androidx.compose.material:material-icons-extended:1.1.0"
+compose-ui = "androidx.compose.ui:ui:1.1.1"
+compose-foundation = "androidx.compose.foundation:foundation:1.1.1"
+compose-icons = "androidx.compose.material:material-icons-core:1.1.1"
+compose-iconsExtended = "androidx.compose.material:material-icons-extended:1.1.1"
 compose-constraintLayout = "androidx.constraintlayout:constraintlayout-compose:1.0.0-beta02"
-compose-compiler = "androidx.compose.compiler:compiler:1.1.0"
+compose-compiler = "androidx.compose.compiler:compiler:1.1.1"
+compose-manifest = "androidx.compose.ui:ui-test-manifest:1.1.1"
 
 mockk-base = "io.mockk:mockk:1.12.0"
 mockk-android = "io.mockk:mockk-android:1.12.0"

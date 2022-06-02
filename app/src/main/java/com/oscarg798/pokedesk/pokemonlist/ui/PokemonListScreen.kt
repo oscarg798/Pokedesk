@@ -39,11 +39,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import com.google.accompanist.placeholder.PlaceholderHighlight
 import com.google.accompanist.placeholder.placeholder
 import com.google.accompanist.placeholder.shimmer
+import com.oscarg798.pokedesk.LocalNavControllerProvider
 import com.oscarg798.pokedesk.R
 import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
@@ -53,53 +53,69 @@ import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import kotlinx.coroutines.launch
 
-fun NavGraphBuilder.pokemonScreen(navController: NavController) =
-    composable(route = PokemonListRoute) {
-        val viewModel: PokemonListViewModel = hiltViewModel(it)
+internal fun NavGraphBuilder.pokemonScreen() = composable(route = PokemonListRoute) {
+    val viewModel: PokemonListViewModel = hiltViewModel(it)
 
-        val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
-        val events: PokemonListViewModel.Event? by viewModel.events.collectAsState(initial = null)
+    val state: PokemonListViewModel.State by viewModel.state.collectAsState(PokemonListViewModel.State())
+    val events: PokemonListViewModel.Event? by viewModel.events.collectAsState(initial = null)
 
-        LaunchedEffect(key1 = events) {
-            val event = events ?: return@LaunchedEffect
+    PokemonScreen(
+        state = state, events = events,
+        onItemClicked = { id ->
+            viewModel.onItemClicked(id)
+        },
+        onBottomReached = {
+            viewModel.fetchPokemonListItems()
+        }
+    )
+}
 
-            if (event !is PokemonListViewModel.Event.NavigateToDetail) {
-                return@LaunchedEffect
-            }
+@Composable
+internal fun PokemonScreen(
+    state: PokemonListViewModel.State,
+    events: PokemonListViewModel.Event? = null,
+    onItemClicked: (Int) -> Unit,
+    onBottomReached: () -> Unit
+) {
 
-            PokemonDetailRoute.navigate(event.id, navController)
+    val navController = LocalNavControllerProvider.current
+
+    LaunchedEffect(key1 = events) {
+        val event = events ?: return@LaunchedEffect
+
+        if (event !is PokemonListViewModel.Event.NavigateToDetail) {
+            return@LaunchedEffect
         }
 
-        Scaffold(
-            topBar = {
-                SearchBar(
-                    search = { viewModel.onSearch() },
-                    onQueryUpdated = { submittedQuery ->
-                        viewModel.onQueryUpdated(query = submittedQuery)
-                    },
-                    currentQuery = state.currentSearchQuery,
-                    enabled = false,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(MaterialTheme.Dimensions.Small)
-                )
-            }
-        ) {
-            when {
-                state.loading && state.pokemonListItems == null -> LoadingList()
-                state.pokemonListItems != null -> PokemonList(
-                    pokemonListItems = state.pokemonListItems!!,
-                    loading = state.loading,
-                    onBottomReached = {
-                        viewModel.fetchPokemonListItems()
-                    }
-                ) { id ->
-                    Int
-                    viewModel.onItemClicked(id)
-                }
+        PokemonDetailRoute.navigate(event.id, navController)
+    }
+
+    Scaffold(
+        topBar = {
+            SearchBar(
+                search = { },
+                onQueryUpdated = { submittedQuery ->
+                },
+                currentQuery = state.currentSearchQuery,
+                enabled = false,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(MaterialTheme.Dimensions.Small)
+            )
+        }
+    ) {
+        when {
+            state.loading && state.pokemonListItems == null -> LoadingList()
+            state.pokemonListItems != null -> PokemonList(
+                pokemonListItems = state.pokemonListItems,
+                loading = state.loading,
+                onBottomReached = onBottomReached
+            ) { id ->
+                onItemClicked(id)
             }
         }
     }
+}
 
 @Composable
 private fun LoadingList() {
