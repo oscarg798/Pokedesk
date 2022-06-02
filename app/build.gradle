@@ -1,0 +1,139 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
+    id 'dagger.hilt.android.plugin'
+
+}
+
+apply from: "../ktlint.gradle"
+
+android {
+    compileSdk appCompileSdkVersion
+
+    defaultConfig {
+        applicationId "com.oscarg798.pokedesk"
+        minSdk appMinSdkVersion
+        targetSdk appTargetSdkVersion
+        versionCode appVersionCode
+        versionName appVersionName
+
+        testInstrumentationRunner "com.oscarg798.pokedesk.utils.CustomTestRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        freeCompilerArgs = ["-Xallow-result-return-type",
+                            "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                            "-Xopt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+                            "-Xopt-in=androidx.compose.ui.ExperimentalComposeUiApi",
+                            "-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                            "-Xopt-in=kotlinx.coroutines.FlowPreview",
+                            "-Xopt-in=kotlin.contracts.ExperimentalContracts"]
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+    testOptions {
+        testOptions {
+           // execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        }
+
+        unitTests {
+            returnDefaultValues = true
+        }
+        adbOptions {
+            installOptions "-g"
+        }
+    }
+}
+
+dependencies {
+
+
+    implementation libs.androidx.coreKtx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.compose.material
+    implementation libs.compose.material3
+    implementation libs.compose.ui
+    implementation libs.compose.tooling
+    implementation libs.androidx.lifecycle.runtime
+    implementation libs.compose.activity
+    implementation libs.accompanist.placeholder
+    implementation libs.accompanist.flowLayout
+
+    implementation libs.androidx.navigation.compose
+
+    implementation libs.coroutines.core
+    implementation libs.coroutines.android
+
+    implementation libs.hilt.compose
+
+    implementation libs.retrofit2.base
+    implementation libs.retrofit2.converter
+    implementation libs.okhttp3.base
+    implementation libs.okhttp3.logging
+
+    implementation libs.landscapist.fresco
+
+    implementation libs.androidx.splashscreen
+
+    implementation libs.hilt.android
+    implementation 'androidx.test:runner:1.4.0'
+    kapt libs.hilt.androidCompiler
+    kapt libs.hilt.dagger.compiler
+
+    testImplementation libs.junit.base
+    testImplementation libs.mockk.base
+    testImplementation libs.junit.base
+    testImplementation libs.coroutines.test
+    testImplementation libs.turbine
+
+    androidTestImplementation libs.mockWebServer
+    androidTestImplementation libs.hilt.androidTesting
+    androidTestImplementation libs.compose.uiTest
+
+    kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.40.5'
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.1")
+
+    androidTestImplementation libs.androidx.test.orchestrator
+    androidTestImplementation libs.androidx.test.rules
+    debugImplementation libs.androidx.test.core
+    androidTestImplementation libs.androidx.test.junit
+    androidTestImplementation libs.androidx.test.runner
+    androidTestImplementation libs.androidx.test.espresso.core
+    androidTestImplementation libs.mockk.android
+
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+
+    implementation libs.androidx.room.runtime
+    implementation libs.androidx.room.ktx
+    ksp libs.androidx.room.compiler
+
+    implementation 'io.github.bytebeats:compose-charts:0.1.1'
+}
