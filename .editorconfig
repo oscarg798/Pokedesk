@@ -1,4 +1,0 @@
-[*.{kt,kts}]
-disabled_rules=max-line-length
-
-
