@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
+    id 'com.google.devtools.ksp' version '1.7.10-1.0.6'
     id 'dagger.hilt.android.plugin'
 
 }
@@ -42,6 +42,7 @@ android {
                             "-Xopt-in=androidx.compose.ui.ExperimentalComposeUiApi",
                             "-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api",
                             "-Xopt-in=kotlinx.coroutines.FlowPreview",
+                            "-Xopt-in=androidx.compose.animation.ExperimentalAnimationApi",
                             "-Xopt-in=kotlin.contracts.ExperimentalContracts"]
         jvmTarget = "1.8"
     }
@@ -50,7 +51,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerExtensionVersion '1.2.0'
     }
     packagingOptions {
         resources {
@@ -67,10 +68,16 @@ android {
             installOptions "-g"
         }
     }
+
+    kotlin {
+        sourceSets.all {
+            kotlin.srcDir("build/generated/ksp/$name/kotlin")
+        }
+    }
 }
 
 dependencies {
-    
+
     implementation libs.androidx.coreKtx
     implementation libs.androidx.appcompat
     implementation libs.material
@@ -130,4 +137,7 @@ dependencies {
     implementation libs.androidx.room.runtime
     implementation libs.androidx.room.ktx
     ksp libs.androidx.room.compiler
+
+    implementation(project(":annotations"))
+    ksp(project(":bindprocessor"))
 }

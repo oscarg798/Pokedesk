@@ -33,10 +33,11 @@ import com.oscarg798.pokedesk.LocalNavControllerProvider
 import com.oscarg798.pokedesk.R
 import com.oscarg798.pokedesk.detail.model.PokemonDetail
 import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
-import com.oscarg798.pokedesk.lib.ViewModelStore
+import com.oscarg798.pokedesk.lib.LocalViewModelStore
 import com.oscarg798.pokedesk.lib.navigation.composable
 import com.oscarg798.pokedesk.lib.type.ui.TypeChip
 import com.oscarg798.pokedesk.lib.ui.Dimensions
+import com.oscarg798.pokedesk.pokemoncardimages.PokemonCardImagesScreen
 import com.skydoves.landscapist.fresco.FrescoImage
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
@@ -44,9 +45,7 @@ import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.android.components.ActivityComponent
 import java.util.Locale
 
-fun NavGraphBuilder.pokemonDetailScreen(
-    viewModelStore: ViewModelStore
-) = composable(
+fun NavGraphBuilder.pokemonDetailScreen() = composable(
     route = PokemonDetailRoute,
     arguments = listOf(
         navArgument(PokemonDetailRoute.IdArgument) { type = NavType.IntType }
@@ -54,6 +53,8 @@ fun NavGraphBuilder.pokemonDetailScreen(
 ) { backStackEntry ->
 
     val activity = LocalContext.current as Activity
+    val viewModelStore = LocalViewModelStore.current
+
     val id = backStackEntry.arguments!!
         .getInt(PokemonDetailRoute.IdArgument)
 
@@ -147,6 +148,13 @@ internal fun PokemonDetailScreen(
                     modifier = Modifier.fillMaxWidth()
                 )
             }
+
+            PokemonCardImagesScreen(
+                pokemonName = pokemon.name,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = MaterialTheme.Dimensions.Medium)
+            )
         }
     }
 }
@@ -201,4 +209,4 @@ internal interface PokemonDetailEntryPoint {
     fun pokemonDetailFactory(): PokemonDetailViewModel.Factory
 }
 
-const val PokemonDetailKey = "PokemonDetailKey"
+private const val PokemonDetailKey = "PokemonDetailKey"

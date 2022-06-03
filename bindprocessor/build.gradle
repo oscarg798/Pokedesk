@@ -1,0 +1,23 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    jcenter() // Warning: this repository is going to shut down soon
+    maven { url('https://repo1.maven.org/maven2/') }
+}
+
+dependencies {
+    implementation(project(":annotations"))
+    implementation libs.dagger.dagger
+
+    implementation("com.squareup:kotlinpoet-ksp:1.11.0")
+    implementation("com.google.devtools.ksp:symbol-processing-api:1.6.10-1.0.4")
+    implementation("com.squareup:kotlinpoet:1.11.0")
+    implementation "com.google.dagger:hilt-core:2.40.5"
+
+
+}
+

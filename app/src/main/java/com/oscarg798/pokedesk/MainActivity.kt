@@ -11,6 +11,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.oscarg798.pokedesk.detail.ui.pokemonDetailScreen
+import com.oscarg798.pokedesk.lib.LocalViewModelStore
 import com.oscarg798.pokedesk.lib.ViewModelStore
 import com.oscarg798.pokedesk.lib.ui.PokeDeskTheme
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
@@ -29,14 +30,18 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             val viewModelStore = remember { ViewModelStore() }
+
             PokeDeskTheme {
-                CompositionLocalProvider(LocalNavControllerProvider provides navController) {
+                CompositionLocalProvider(
+                    LocalNavControllerProvider provides navController,
+                    LocalViewModelStore provides viewModelStore
+                ) {
                     NavHost(
                         navController = navController,
                         startDestination = PokemonListRoute.route
                     ) {
                         pokemonScreen()
-                        pokemonDetailScreen(viewModelStore)
+                        pokemonDetailScreen()
                     }
                 }
             }

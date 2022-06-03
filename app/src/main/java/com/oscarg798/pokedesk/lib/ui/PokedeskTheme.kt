@@ -21,7 +21,7 @@ private fun ProvideThemeConfig(
 }
 
 @Composable
-fun PokeDeskTheme(content: @Composable () -> Unit) {
+fun PokeDeskTheme(content: @Composable () -> Unit,) {
     val fontSizes = if (isSmallScreen()) normalFontSizes else smallFontSizes
     ProvideThemeConfig(
         if (isSmallScreen()) normalDimensions else smallDimensions,

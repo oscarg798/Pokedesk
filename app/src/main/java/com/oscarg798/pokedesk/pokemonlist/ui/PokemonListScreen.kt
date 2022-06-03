@@ -26,6 +26,8 @@ import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
+import androidx.compose.material.TextField
+import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -37,18 +39,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavGraphBuilder
-import com.google.accompanist.placeholder.PlaceholderHighlight
-import com.google.accompanist.placeholder.placeholder
-import com.google.accompanist.placeholder.shimmer
 import com.oscarg798.pokedesk.LocalNavControllerProvider
 import com.oscarg798.pokedesk.R
 import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
+import com.oscarg798.pokedesk.lib.shimmer
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
+import com.oscarg798.pokedesk.lib.ui.SecondaryTextColor
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.navigation.PokemonListRoute
 import kotlinx.coroutines.launch
@@ -92,12 +94,7 @@ internal fun PokemonScreen(
 
     Scaffold(
         topBar = {
-            SearchBar(
-                search = { },
-                onQueryUpdated = { submittedQuery ->
-                },
-                currentQuery = state.currentSearchQuery,
-                enabled = false,
+            PokemonListTopBar(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(MaterialTheme.Dimensions.Small)
@@ -128,12 +125,7 @@ private fun LoadingList() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(100.dp)
-                    .placeholder(
-                        visible = true,
-                        shape = RoundedCornerShape(MaterialTheme.Dimensions.Medium),
-                        color = MaterialTheme.colors.surface,
-                        highlight = PlaceholderHighlight.shimmer(highlightColor = Color(0xffcccccc))
-                    )
+                    .shimmer()
                     .wrapContentHeight()
             ) { }
         }
@@ -274,6 +266,41 @@ private fun PokemonListLazyColumn(
     }
 }
 
-private val FirstItem = 0
+@Composable
+private fun PokemonListTopBar(modifier: Modifier) {
+    TextField(
+        enabled = false,
+        modifier = modifier,
+        value = "",
+        onValueChange = { },
+        shape = RoundedCornerShape(MaterialTheme.Dimensions.Medium),
+        maxLines = SingleLine,
+        placeholder = {
+            Text(
+                text = stringResource(R.string.search_hint),
+                style = MaterialTheme.typography.subtitle1.copy(color = SecondaryTextColor)
+            )
+        },
+        textStyle = MaterialTheme.typography.subtitle1,
+        trailingIcon = {
+            Icon(
+                painterResource(R.drawable.ic_pokeball_grayscale),
+                contentDescription = null,
+                tint = MaterialTheme.colors.primary,
+                modifier = Modifier.size(20.dp)
+            )
+        },
+        colors = TextFieldDefaults.textFieldColors(
+            backgroundColor = MaterialTheme.colors.surface,
+            focusedIndicatorColor = Color.Transparent,
+            unfocusedIndicatorColor = Color.Transparent,
+            disabledIndicatorColor = Color.Transparent,
+            textColor = MaterialTheme.colors.onSurface
+        )
+    )
+}
+
+private const val SingleLine = 1
+private const val FirstItem = 0
 private fun LazyListState.isScrolledToEnd() = layoutInfo.totalItemsCount > 0 &&
     layoutInfo.visibleItemsInfo.lastOrNull()?.index == layoutInfo.totalItemsCount - 1

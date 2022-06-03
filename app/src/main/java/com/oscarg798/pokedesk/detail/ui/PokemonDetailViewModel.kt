@@ -25,16 +25,17 @@ class PokemonDetailViewModel @AssistedInject constructor(
 
     private fun getDetail() {
         launch {
-            update { it.copy(loading = true) }
+            update { it.copy(loadingDetail = true, loadingCards = true) }
             val pokemon = withContext(io) {
                 getPokemonDetail(id)
             }
-            update { it.copy(loading = false, pokemon = pokemon) }
+            update { it.copy(loadingDetail = false, pokemon = pokemon) }
         }
     }
 
     data class State(
-        val loading: Boolean = false,
+        val loadingDetail: Boolean = false,
+        val loadingCards: Boolean = false,
         val pokemon: PokemonDetail? = null
     )
 

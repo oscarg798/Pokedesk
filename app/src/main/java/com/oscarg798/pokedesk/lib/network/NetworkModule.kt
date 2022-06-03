@@ -1,10 +1,8 @@
 package com.oscarg798.pokedesk.lib.network
 
-import com.google.gson.Gson
 import com.oscarg798.pokedesk.BuildConfig
 import dagger.Module
 import dagger.Provides
-import dagger.Reusable
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoSet
@@ -13,8 +11,6 @@ import javax.inject.Singleton
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 @InstallIn(SingletonComponent::class)
 @Module
@@ -48,22 +44,5 @@ object NetworkModule {
     }
 }
 
-@InstallIn(SingletonComponent::class)
-@Module
-object RetrofitModule {
-
-    @Reusable
-    @Provides
-    fun provideRetrofit(
-        okHttpClient: OkHttpClient,
-        gson: Gson
-    ): Retrofit = Retrofit.Builder()
-        .baseUrl(AuthUrl)
-        .addConverterFactory(GsonConverterFactory.create(gson))
-        .client(okHttpClient)
-        .build()
-}
-
-private const val AuthUrl = "https://pokeapi.co/api/v2/"
 private const val ReadTimeOut = 30L
 private const val ConnectionTimeOut = 30L

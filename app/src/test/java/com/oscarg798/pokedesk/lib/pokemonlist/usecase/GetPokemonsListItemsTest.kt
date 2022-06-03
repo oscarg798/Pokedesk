@@ -3,7 +3,7 @@ package com.oscarg798.pokedesk.lib.pokemonlist.usecase
 import androidx.compose.ui.graphics.Color
 import app.cash.turbine.test
 import com.oscarg798.pokedesk.lib.PokemonGenerator
-import com.oscarg798.pokedesk.lib.pokemon.repository.PokemonRepository
+import com.oscarg798.pokedesk.lib.pokemon.repository.PokemonRepositoryImpl
 import com.oscarg798.pokedesk.lib.type.TypeRepository
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
 import com.oscarg798.pokedesk.pokemonlist.usecase.GetPokemonListItems
@@ -19,7 +19,7 @@ import org.junit.Test
 
 class GetPokemonsListItemsTest {
 
-    private val pokemonRepository: PokemonRepository = mockk()
+    private val pokemonRepository: PokemonRepositoryImpl = mockk()
     private val typeRepository: TypeRepository = mockk()
     private lateinit var usecase: GetPokemonListItems
 
