@@ -35,18 +35,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavGraphBuilder
-import com.google.accompanist.placeholder.PlaceholderHighlight
-import com.google.accompanist.placeholder.placeholder
-import com.google.accompanist.placeholder.shimmer
 import com.oscarg798.pokedesk.LocalNavControllerProvider
 import com.oscarg798.pokedesk.R
 import com.oscarg798.pokedesk.detail.navigation.PokemonDetailRoute
 import com.oscarg798.pokedesk.lib.navigation.composable
+import com.oscarg798.pokedesk.lib.shimmer
 import com.oscarg798.pokedesk.lib.ui.Dimensions
 import com.oscarg798.pokedesk.lib.ui.LocalAppDimens
 import com.oscarg798.pokedesk.pokemonlist.model.PokemonListItem
@@ -114,6 +111,7 @@ internal fun PokemonScreen(
                 onItemClicked(id)
             }
         }
+
     }
 }
 
@@ -128,12 +126,7 @@ private fun LoadingList() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(100.dp)
-                    .placeholder(
-                        visible = true,
-                        shape = RoundedCornerShape(MaterialTheme.Dimensions.Medium),
-                        color = MaterialTheme.colors.surface,
-                        highlight = PlaceholderHighlight.shimmer(highlightColor = Color(0xffcccccc))
-                    )
+                    .shimmer()
                     .wrapContentHeight()
             ) { }
         }
@@ -276,4 +269,4 @@ private fun PokemonListLazyColumn(
 
 private val FirstItem = 0
 private fun LazyListState.isScrolledToEnd() = layoutInfo.totalItemsCount > 0 &&
-    layoutInfo.visibleItemsInfo.lastOrNull()?.index == layoutInfo.totalItemsCount - 1
+        layoutInfo.visibleItemsInfo.lastOrNull()?.index == layoutInfo.totalItemsCount - 1

@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import com.oscarg798.pokedesk.detail.model.PokemonDetail
 import com.oscarg798.pokedesk.detail.usecase.GetPokemonDetail
 import com.oscarg798.pokedesk.lib.PokemonGenerator
-import com.oscarg798.pokedesk.lib.pokemon.repository.PokemonRepository
+import com.oscarg798.pokedesk.lib.pokemon.repository.PokemonRepositoryImpl
 import com.oscarg798.pokedesk.lib.type.TypeRepository
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -15,7 +15,7 @@ import org.junit.Test
 
 class GetPokemonDetailTest {
 
-    private val pokemonRepository = mockk<PokemonRepository>()
+    private val pokemonRepository = mockk<PokemonRepositoryImpl>()
     private val typeRepository = mockk<TypeRepository>()
 
     @Test

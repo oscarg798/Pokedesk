@@ -5,40 +5,59 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.navigation.NavController
 import com.oscarg798.pokedesk.LocalNavControllerProvider
+import com.oscarg798.pokedesk.MainActivity
 import com.oscarg798.pokedesk.detail.model.PokemonDetail
 import com.oscarg798.pokedesk.detail.ui.PokemonDetailScreen
 import com.oscarg798.pokedesk.detail.ui.PokemonDetailViewModel
+import com.oscarg798.pokedesk.lib.LocalViewModelStore
+import com.oscarg798.pokedesk.lib.ViewModelStore
 import com.oscarg798.pokedesk.lib.ui.PokeDeskTheme
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import io.mockk.mockk
 import java.util.UUID
 import kotlin.random.Random
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.RuleChain
 
+@HiltAndroidTest
 class PokemonDetailTest {
 
+    private val hiltRule = HiltAndroidRule(this)
+    private val composeRule = createAndroidComposeRule(MainActivity::class.java)
+
     @get:Rule
-    val composeRule = createComposeRule()
+    val ruleChain = RuleChain.outerRule(hiltRule)
+        .around(composeRule)
 
     private val navController: NavController = mockk(relaxed = true)
     private val pokemonDetailPage: PokemonDetailPage = PokemonDetailPage(composeRule)
 
+    @Before
+    fun setup() {
+        hiltRule.inject()
+    }
+
     @Test
     fun Given_a_pokemon_when_screen_shown_Then_detail_shown_properly() {
         val pokemonDetail = Pokemon.copy(stats = generateStats())
-
+        val viewModelStore = ViewModelStore()
         composeRule.setContent {
-            val scrollState = rememberScrollState(Int.MAX_VALUE)
+            CompositionLocalProvider(LocalViewModelStore provides viewModelStore) {
+                val scrollState = rememberScrollState(Int.MAX_VALUE)
 
-            PokeDeskTheme {
-                CompositionLocalProvider(LocalNavControllerProvider provides navController) {
-                    PokemonDetailScreen(
-                        state = PokemonDetailViewModel.State(pokemon = pokemonDetail),
-                        modifier = Modifier.verticalScroll(scrollState)
-                    )
+                PokeDeskTheme {
+                    CompositionLocalProvider(LocalNavControllerProvider provides navController) {
+                        PokemonDetailScreen(
+                            state = PokemonDetailViewModel.State(pokemon = pokemonDetail),
+                            modifier = Modifier.verticalScroll(scrollState)
+                        )
+                    }
                 }
             }
         }

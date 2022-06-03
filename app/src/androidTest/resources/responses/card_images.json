@@ -1,0 +1,3831 @@
+{
+  "data": [
+    {
+      "id": "det1-4",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "This Pokémon does 10 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "det1",
+        "name": "Detective Pikachu",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 18,
+        "total": 18,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "DET",
+        "releaseDate": "2019/04/05",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/det1/symbol.png",
+          "logo": "https://images.pokemontcg.io/det1/logo.png"
+        }
+      },
+      "number": "4",
+      "artist": "MPC Film",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/det1/4.png",
+        "large": "https://images.pokemontcg.io/det1/4_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/det1-4",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "holofoil": {
+            "low": 0.1,
+            "mid": 0.4,
+            "high": 4.99,
+            "market": 0.25,
+            "directLow": 0.14
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/det1-4",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 0.3,
+          "lowPrice": 0.02,
+          "trendPrice": 0.29,
+          "reverseHoloSell": 0.7,
+          "reverseHoloLow": 0.1,
+          "reverseHoloTrend": 0.47,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.05,
+          "avg7": 0.31,
+          "avg30": 0.29,
+          "reverseHoloAvg1": 0.69,
+          "reverseHoloAvg7": 0.52,
+          "reverseHoloAvg30": 0.36
+        }
+      }
+    },
+    {
+      "id": "sm75-1",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Fire Fang",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "sm75",
+        "name": "Dragon Majesty",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 70,
+        "total": 80,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "DRM",
+        "releaseDate": "2018/09/07",
+        "updatedAt": "2018/10/01 21:54:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm75/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm75/logo.png"
+        }
+      },
+      "number": "1",
+      "artist": "tetsuya koizumi",
+      "rarity": "Common",
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm75/1.png",
+        "large": "https://images.pokemontcg.io/sm75/1_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm75-1",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.74,
+            "mid": 1.23,
+            "high": 4.99,
+            "market": 1.01
+          },
+          "reverseHolofoil": {
+            "low": 6.17,
+            "mid": 8.9,
+            "high": 35.0,
+            "market": 8.65,
+            "directLow": 6.48
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm75-1",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 1.22,
+          "lowPrice": 0.1,
+          "trendPrice": 1.2,
+          "reverseHoloLow": 2.7,
+          "reverseHoloTrend": 12.53,
+          "lowPriceExPlus": 0.1,
+          "avg1": 1.45,
+          "avg7": 1.45,
+          "avg30": 1.04,
+          "reverseHoloAvg1": 0.48,
+          "reverseHoloAvg7": 9.42,
+          "reverseHoloAvg30": 12.72
+        }
+      }
+    },
+    {
+      "id": "sm115-7",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "sm115",
+        "name": "Hidden Fates",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 68,
+        "total": 69,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "HIF",
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm115/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm115/logo.png"
+        }
+      },
+      "number": "7",
+      "artist": "Megumi Mizutani",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/7.png",
+        "large": "https://images.pokemontcg.io/sm115/7_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm115-7",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.01,
+            "mid": 0.2,
+            "high": 1.07,
+            "market": 0.12,
+            "directLow": 0.11
+          },
+          "reverseHolofoil": {
+            "low": 0.15,
+            "mid": 0.59,
+            "high": 1.45,
+            "market": 0.56,
+            "directLow": 0.37
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm115-7",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.04,
+          "lowPrice": 0.01,
+          "trendPrice": 0.04,
+          "reverseHoloSell": 0.77,
+          "reverseHoloLow": 0.09,
+          "reverseHoloTrend": 0.74,
+          "lowPriceExPlus": 0.01,
+          "avg1": 0.02,
+          "avg7": 0.05,
+          "avg30": 0.07,
+          "reverseHoloAvg1": 0.15,
+          "reverseHoloAvg7": 0.8,
+          "reverseHoloAvg30": 0.69
+        }
+      }
+    },
+    {
+      "id": "sm9-11",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Reprisal",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "This attack does 20 damage for each damage counter on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "sm9",
+        "name": "Team Up",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 181,
+        "total": 198,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "TEU",
+        "releaseDate": "2019/02/01",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm9/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm9/logo.png"
+        }
+      },
+      "number": "11",
+      "artist": "Naoyo Kimura",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm9/11.png",
+        "large": "https://images.pokemontcg.io/sm9/11_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm9-11",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 0.25,
+            "high": 1.05,
+            "market": 0.22,
+            "directLow": 0.19
+          },
+          "reverseHolofoil": {
+            "low": 0.25,
+            "mid": 0.66,
+            "high": 2.41,
+            "market": 0.67,
+            "directLow": 0.3
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm9-11",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.25,
+          "lowPrice": 0.02,
+          "trendPrice": 0.25,
+          "reverseHoloSell": 0.99,
+          "reverseHoloLow": 0.2,
+          "reverseHoloTrend": 0.5,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.65,
+          "avg7": 0.18,
+          "avg30": 0.19,
+          "reverseHoloAvg1": 0.99,
+          "reverseHoloAvg7": 1.24,
+          "reverseHoloAvg30": 1.73
+        }
+      }
+    },
+    {
+      "id": "sm9-12",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "sm9",
+        "name": "Team Up",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 181,
+        "total": 198,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "TEU",
+        "releaseDate": "2019/02/01",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm9/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm9/logo.png"
+        }
+      },
+      "number": "12",
+      "artist": "Atsuko Nishida",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm9/12.png",
+        "large": "https://images.pokemontcg.io/sm9/12_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm9-12",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 0.25,
+            "high": 1.09,
+            "market": 0.2,
+            "directLow": 0.21
+          },
+          "reverseHolofoil": {
+            "low": 0.3,
+            "mid": 0.58,
+            "high": 1.39,
+            "market": 0.51,
+            "directLow": 0.48
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm9-12",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.24,
+          "lowPrice": 0.02,
+          "trendPrice": 0.26,
+          "reverseHoloSell": 1.1,
+          "reverseHoloLow": 0.23,
+          "reverseHoloTrend": 1.52,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.39,
+          "avg7": 0.24,
+          "avg30": 0.2,
+          "reverseHoloAvg1": 0.2,
+          "reverseHoloAvg7": 1.98,
+          "reverseHoloAvg30": 2.06
+        }
+      }
+    },
+    {
+      "id": "sma-SV6",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Fire Fang",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Your opponent's Active Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "sma",
+        "name": "Shiny Vault",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 94,
+        "total": 94,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "releaseDate": "2019/08/23",
+        "updatedAt": "2021/09/01 05:37:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sma/symbol.png",
+          "logo": "https://images.pokemontcg.io/sma/logo.png"
+        }
+      },
+      "number": "SV6",
+      "artist": "kirisAki",
+      "rarity": "Rare Shiny",
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sma/SV6.png",
+        "large": "https://images.pokemontcg.io/sma/SV6_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sma-SV6",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "holofoil": {
+            "low": 11.62,
+            "mid": 14.9,
+            "high": 60.0,
+            "market": 12.83,
+            "directLow": 11.62
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sma-SV6",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 16.72,
+          "lowPrice": 9.99,
+          "trendPrice": 16.07,
+          "reverseHoloLow": 25.0,
+          "reverseHoloTrend": 9.04,
+          "lowPriceExPlus": 9.99,
+          "avg1": 13.99,
+          "avg7": 17.44,
+          "avg30": 17.15,
+          "reverseHoloAvg1": 0.5,
+          "reverseHoloAvg7": 25.82,
+          "reverseHoloAvg30": 34.57
+        }
+      }
+    },
+    {
+      "id": "bw11-17",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Draw In",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach 2 Fire Energy cards from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "bw11",
+        "name": "Legendary Treasures",
+        "series": "Black \u0026 White",
+        "printedTotal": 113,
+        "total": 140,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "LTR",
+        "releaseDate": "2013/11/06",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/bw11/symbol.png",
+          "logo": "https://images.pokemontcg.io/bw11/logo.png"
+        }
+      },
+      "number": "17",
+      "artist": "match",
+      "rarity": "Common",
+      "flavorText": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw11/17.png",
+        "large": "https://images.pokemontcg.io/bw11/17_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/bw11-17",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.48,
+            "mid": 1.0,
+            "high": 5.72,
+            "market": 1.01
+          },
+          "reverseHolofoil": {
+            "low": 8.99,
+            "mid": 10.99,
+            "high": 19.12,
+            "market": 16.83,
+            "directLow": 10.48
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/bw11-17",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.73,
+          "lowPrice": 1.5,
+          "trendPrice": 2.85,
+          "reverseHoloLow": 8.0,
+          "reverseHoloTrend": 14.77,
+          "lowPriceExPlus": 1.99,
+          "avg1": 3.95,
+          "avg7": 2.88,
+          "avg30": 3.09,
+          "reverseHoloAvg1": 19.95,
+          "reverseHoloAvg7": 13.34,
+          "reverseHoloAvg30": 6.64
+        }
+      }
+    },
+    {
+      "id": "pop5-10",
+      "name": "Charmander δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "pop5",
+        "name": "POP Series 5",
+        "series": "POP",
+        "printedTotal": 17,
+        "total": 17,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2007/03/01",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pop5/symbol.png",
+          "logo": "https://images.pokemontcg.io/pop5/logo.png"
+        }
+      },
+      "number": "10",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pop5/10.png",
+        "large": "https://images.pokemontcg.io/pop5/10_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pop5-10",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 6.74,
+            "mid": 8.22,
+            "high": 12.99,
+            "market": 11.01
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pop5-10",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 7.0,
+          "lowPrice": 2.0,
+          "trendPrice": 5.25,
+          "reverseHoloTrend": 0.0,
+          "lowPriceExPlus": 5.0,
+          "avg1": 2.5,
+          "avg7": 5.09,
+          "avg30": 5.3
+        }
+      }
+    },
+    {
+      "id": "xy12-9",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard a Fire Energy attached to this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "xy12",
+        "name": "Evolutions",
+        "series": "XY",
+        "printedTotal": 108,
+        "total": 113,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "EVO",
+        "releaseDate": "2016/11/02",
+        "updatedAt": "2020/09/25 10:09:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/xy12/symbol.png",
+          "logo": "https://images.pokemontcg.io/xy12/logo.png"
+        }
+      },
+      "number": "9",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/xy12/9.png",
+        "large": "https://images.pokemontcg.io/xy12/9_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/xy12-9",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.02,
+            "mid": 0.25,
+            "high": 2.95,
+            "market": 0.08,
+            "directLow": 0.12
+          },
+          "reverseHolofoil": {
+            "low": 0.75,
+            "mid": 1.5,
+            "high": 19.95,
+            "market": 1.14,
+            "directLow": 0.75
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/xy12-9",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.22,
+          "lowPrice": 0.02,
+          "trendPrice": 0.23,
+          "reverseHoloSell": 1.96,
+          "reverseHoloLow": 0.49,
+          "reverseHoloTrend": 1.79,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.06,
+          "avg7": 0.19,
+          "avg30": 0.19,
+          "reverseHoloAvg1": 1.45,
+          "reverseHoloAvg7": 2.02,
+          "reverseHoloAvg30": 2.06
+        }
+      }
+    },
+    {
+      "id": "bw7-18",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Draw In",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Attach 2 Fire Energy cards from your discard pile to this Pokémon."
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "bw7",
+        "name": "Boundaries Crossed",
+        "series": "Black \u0026 White",
+        "printedTotal": 149,
+        "total": 153,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BCR",
+        "releaseDate": "2012/11/07",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/bw7/symbol.png",
+          "logo": "https://images.pokemontcg.io/bw7/logo.png"
+        }
+      },
+      "number": "18",
+      "artist": "Akira Komayama",
+      "rarity": "Common",
+      "flavorText": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/bw7/18.png",
+        "large": "https://images.pokemontcg.io/bw7/18_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/bw7-18",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 1.35,
+            "mid": 2.0,
+            "high": 5.0,
+            "market": 1.82
+          },
+          "reverseHolofoil": {
+            "low": 4.49,
+            "mid": 14.97,
+            "high": 39.99,
+            "market": 4.92,
+            "directLow": 14.94
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/bw7-18",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.71,
+          "lowPrice": 0.13,
+          "trendPrice": 1.47,
+          "reverseHoloLow": 1.0,
+          "reverseHoloTrend": 10.04,
+          "lowPriceExPlus": 0.15,
+          "avg1": 1.8,
+          "avg7": 1.63,
+          "avg30": 1.77,
+          "reverseHoloAvg1": 5.5,
+          "reverseHoloAvg7": 7.83,
+          "reverseHoloAvg30": 3.9
+        }
+      }
+    },
+    {
+      "id": "sm3-18",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flame Tail",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "sm3",
+        "name": "Burning Shadows",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 147,
+        "total": 177,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BUS",
+        "releaseDate": "2017/08/05",
+        "updatedAt": "2019/02/19 23:25:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm3/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm3/logo.png"
+        }
+      },
+      "number": "18",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm3/18.png",
+        "large": "https://images.pokemontcg.io/sm3/18_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/sm3-18",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.01,
+            "mid": 0.2,
+            "high": 1.66,
+            "market": 0.08,
+            "directLow": 0.05
+          },
+          "reverseHolofoil": {
+            "low": 0.15,
+            "mid": 0.44,
+            "high": 1.25,
+            "market": 0.33,
+            "directLow": 0.16
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm3-18",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.15,
+          "lowPrice": 0.03,
+          "trendPrice": 0.25,
+          "reverseHoloTrend": 0.0,
+          "lowPriceExPlus": 0.03,
+          "avg1": 0.1,
+          "avg7": 0.18,
+          "avg30": 0.28
+        }
+      }
+    },
+    {
+      "id": "sm3-18a",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flame Tail",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "sm3",
+        "name": "Burning Shadows",
+        "series": "Sun \u0026 Moon",
+        "printedTotal": 147,
+        "total": 177,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "BUS",
+        "releaseDate": "2017/08/05",
+        "updatedAt": "2019/02/19 23:25:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/sm3/symbol.png",
+          "logo": "https://images.pokemontcg.io/sm3/logo.png"
+        }
+      },
+      "number": "18a",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/sm3/18a.png",
+        "large": "https://images.pokemontcg.io/sm3/18a_hires.png"
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/sm3-18a",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 7.89,
+          "lowPrice": 5.49,
+          "trendPrice": 7.43,
+          "reverseHoloTrend": 8.83,
+          "lowPriceExPlus": 5.49,
+          "avg1": 6.5,
+          "avg7": 7.18,
+          "avg30": 8.35,
+          "reverseHoloAvg1": 11.89,
+          "reverseHoloAvg7": 6.54,
+          "reverseHoloAvg30": 3.76
+        }
+      }
+    },
+    {
+      "id": "swsh4-23",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "swsh4",
+        "name": "Vivid Voltage",
+        "series": "Sword \u0026 Shield",
+        "printedTotal": 185,
+        "total": 203,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "VIV",
+        "releaseDate": "2020/11/13",
+        "updatedAt": "2020/11/13 16:20:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/swsh4/symbol.png",
+          "logo": "https://images.pokemontcg.io/swsh4/logo.png"
+        }
+      },
+      "number": "23",
+      "artist": "MAHOU",
+      "rarity": "Common",
+      "flavorText": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swsh4/23.png",
+        "large": "https://images.pokemontcg.io/swsh4/23_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/swsh4-23",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.01,
+            "mid": 0.21,
+            "high": 4.95,
+            "market": 0.14,
+            "directLow": 0.19
+          },
+          "reverseHolofoil": {
+            "low": 0.1,
+            "mid": 0.45,
+            "high": 999.99,
+            "market": 0.25,
+            "directLow": 0.2
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/swsh4-23",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.06,
+          "lowPrice": 0.01,
+          "trendPrice": 0.06,
+          "reverseHoloSell": 0.56,
+          "reverseHoloLow": 0.02,
+          "reverseHoloTrend": 0.51,
+          "lowPriceExPlus": 0.01,
+          "avg1": 0.07,
+          "avg7": 0.05,
+          "avg30": 0.08,
+          "reverseHoloAvg1": 0.55,
+          "reverseHoloAvg7": 0.6,
+          "reverseHoloAvg30": 0.47
+        }
+      }
+    },
+    {
+      "id": "base1-46",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard 1 Fire Energy card attached to Charmander in order to use this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "base1",
+        "name": "Base",
+        "series": "Base",
+        "printedTotal": 102,
+        "total": 102,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "BS",
+        "releaseDate": "1999/01/09",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base1/symbol.png",
+          "logo": "https://images.pokemontcg.io/base1/logo.png"
+        }
+      },
+      "number": "46",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base1/46.png",
+        "large": "https://images.pokemontcg.io/base1/46_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base1-46",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 1.34,
+            "high": 35.0,
+            "market": 1.34,
+            "directLow": 0.5
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base1-46",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 4.26,
+          "lowPrice": 0.02,
+          "trendPrice": 5.58,
+          "reverseHoloTrend": 7.04,
+          "lowPriceExPlus": 0.24,
+          "avg1": 1.02,
+          "avg7": 6.89,
+          "avg30": 4.7,
+          "reverseHoloAvg1": 20.0,
+          "reverseHoloAvg7": 6.42,
+          "reverseHoloAvg30": 12.47
+        }
+      }
+    },
+    {
+      "id": "ex14-48",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Retaliate",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Does 10 damage times the number of damage counters on Charmander."
+        },
+        {
+          "name": "Flame Tail",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex14",
+        "name": "Crystal Guardians",
+        "series": "EX",
+        "printedTotal": 100,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "CG",
+        "releaseDate": "2006/08/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex14/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex14/logo.png"
+        }
+      },
+      "number": "48",
+      "artist": "Atsuko Nishida",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex14/48.png",
+        "large": "https://images.pokemontcg.io/ex14/48_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex14-48",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.68,
+            "mid": 1.04,
+            "high": 5.77,
+            "market": 1.68,
+            "directLow": 0.28
+          },
+          "reverseHolofoil": {
+            "low": 8.97,
+            "mid": 10.13,
+            "high": 40.0,
+            "market": 9.22,
+            "directLow": 5.41
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex14-48",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.28,
+          "lowPrice": 0.02,
+          "trendPrice": 0.7,
+          "reverseHoloSell": 7.0,
+          "reverseHoloLow": 3.0,
+          "reverseHoloTrend": 9.23,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.02,
+          "avg7": 1.3,
+          "avg30": 1.13,
+          "reverseHoloAvg1": 7.0,
+          "reverseHoloAvg7": 7.07,
+          "reverseHoloAvg30": 6.61
+        }
+      }
+    },
+    {
+      "id": "ex14-49",
+      "name": "Charmander δ",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex14",
+        "name": "Crystal Guardians",
+        "series": "EX",
+        "printedTotal": 100,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "CG",
+        "releaseDate": "2006/08/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex14/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex14/logo.png"
+        }
+      },
+      "number": "49",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex14/49.png",
+        "large": "https://images.pokemontcg.io/ex14/49_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex14-49",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.29,
+            "mid": 1.75,
+            "high": 10.97,
+            "market": 2.18,
+            "directLow": 1.98
+          },
+          "reverseHolofoil": {
+            "low": 20.72,
+            "mid": 29.66,
+            "high": 39.99,
+            "market": 26.6
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex14-49",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.02,
+          "lowPrice": 0.02,
+          "trendPrice": 2.41,
+          "reverseHoloSell": 25.0,
+          "reverseHoloLow": 3.95,
+          "reverseHoloTrend": 26.04,
+          "lowPriceExPlus": 0.1,
+          "avg1": 1.8,
+          "avg7": 2.15,
+          "avg30": 1.91,
+          "reverseHoloAvg1": 25.0,
+          "reverseHoloAvg7": 23.11,
+          "reverseHoloAvg30": 13.68
+        }
+      }
+    },
+    {
+      "id": "base5-50",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "9",
+      "hp": "40",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "abilities": [
+        {
+          "name": "Gather Fire",
+          "text": "Once during your turn (before your attack), you may take 1 Fire Energy card attached to 1 of your other Pokémon and attach it to Charmander. This power can't be used if Charmander is Asleep, Confused, or Paralyzed.",
+          "type": "Pokémon Power"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Fire Tail",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "base5",
+        "name": "Team Rocket",
+        "series": "Base",
+        "printedTotal": 82,
+        "total": 83,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "TR",
+        "releaseDate": "2000/04/24",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base5/symbol.png",
+          "logo": "https://images.pokemontcg.io/base5/logo.png"
+        }
+      },
+      "number": "50",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Common",
+      "flavorText": "Many people find it cute and try to hold it, only to be burned by its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base5/50.png",
+        "large": "https://images.pokemontcg.io/base5/50_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base5-50",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "1stEdition": {
+            "low": 1.06,
+            "mid": 5.48,
+            "high": 19.99,
+            "market": 4.29,
+            "directLow": 2.78
+          },
+          "unlimited": {
+            "low": 0.3,
+            "mid": 1.03,
+            "high": 4.98,
+            "market": 0.91,
+            "directLow": 0.69
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base5-50",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.06,
+          "lowPrice": 0.02,
+          "trendPrice": 2.32,
+          "reverseHoloTrend": 8.77,
+          "lowPriceExPlus": 0.19,
+          "avg1": 0.7,
+          "avg7": 0.99,
+          "avg30": 2.06,
+          "reverseHoloAvg1": 3.99,
+          "reverseHoloAvg7": 8.63,
+          "reverseHoloAvg30": 5.6
+        }
+      }
+    },
+    {
+      "id": "ex16-48",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Smokescreen",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex16",
+        "name": "Power Keepers",
+        "series": "EX",
+        "printedTotal": 108,
+        "total": 108,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "PK",
+        "releaseDate": "2007/02/02",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex16/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex16/logo.png"
+        }
+      },
+      "number": "48",
+      "artist": "Sachiko Adachi",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex16/48.png",
+        "large": "https://images.pokemontcg.io/ex16/48_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex16-48",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.2,
+            "mid": 0.99,
+            "high": 3.13,
+            "market": 1.14
+          },
+          "reverseHolofoil": {
+            "low": 12.34,
+            "mid": 20.93,
+            "high": 33.0,
+            "market": 12.99,
+            "directLow": 7.95
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex16-48",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 0.52,
+          "lowPrice": 0.02,
+          "trendPrice": 0.31,
+          "reverseHoloSell": 3.45,
+          "reverseHoloLow": 3.99,
+          "reverseHoloTrend": 9.45,
+          "lowPriceExPlus": 0.02,
+          "avg1": 0.3,
+          "avg7": 0.59,
+          "avg30": 0.33,
+          "reverseHoloAvg1": 3.8,
+          "reverseHoloAvg7": 4.41,
+          "reverseHoloAvg30": 6.69
+        }
+      }
+    },
+    {
+      "id": "pl4-59",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "13",
+      "hp": "60",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Call for Friends",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for a Fire Basic Pokémon, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+        },
+        {
+          "name": "Steady Firebreathing",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "pl4",
+        "name": "Arceus",
+        "series": "Platinum",
+        "printedTotal": 99,
+        "total": 111,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "AR",
+        "releaseDate": "2009/11/04",
+        "updatedAt": "2021/07/15 11:30:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/pl4/symbol.png",
+          "logo": "https://images.pokemontcg.io/pl4/logo.png"
+        }
+      },
+      "number": "59",
+      "artist": "Suwama Chiaki",
+      "rarity": "Common",
+      "flavorText": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/pl4/59.png",
+        "large": "https://images.pokemontcg.io/pl4/59_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/pl4-59",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "normal": {
+            "low": 0.35,
+            "mid": 1.26,
+            "high": 4.77,
+            "market": 1.63,
+            "directLow": 1.66
+          },
+          "reverseHolofoil": {
+            "low": 15.99,
+            "mid": 17.14,
+            "high": 25.0,
+            "market": 18.05,
+            "directLow": 16.9
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/pl4-59",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 0.47,
+          "lowPrice": 0.02,
+          "trendPrice": 0.4,
+          "reverseHoloSell": 15.0,
+          "reverseHoloLow": 4.0,
+          "reverseHoloTrend": 15.04,
+          "lowPriceExPlus": 0.06,
+          "avg1": 0.81,
+          "avg7": 0.49,
+          "avg30": 0.45,
+          "reverseHoloAvg1": 15.0,
+          "reverseHoloAvg7": 7.89,
+          "reverseHoloAvg30": 5.95
+        }
+      }
+    },
+    {
+      "id": "gym2-60",
+      "name": "Blaine's Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "18",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Fire Tail Slap",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Use this attack only if there are any Fire Energy cards attached to Blaine's Charmander. Flip a coin. If tails, discard 1 of those cards."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "gym2",
+        "name": "Gym Challenge",
+        "series": "Gym",
+        "printedTotal": 132,
+        "total": 132,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "G2",
+        "releaseDate": "2000/10/16",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/gym2/symbol.png",
+          "logo": "https://images.pokemontcg.io/gym2/logo.png"
+        }
+      },
+      "number": "60",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/gym2/60.png",
+        "large": "https://images.pokemontcg.io/gym2/60_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/gym2-60",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "1stEdition": {
+            "low": 7.0,
+            "mid": 12.79,
+            "high": 22.36,
+            "market": 14.17,
+            "directLow": 12.99
+          },
+          "unlimited": {
+            "low": 0.64,
+            "mid": 1.62,
+            "high": 12.0,
+            "market": 2.0,
+            "directLow": 1.3
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/gym2-60",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.94,
+          "lowPrice": 0.4,
+          "trendPrice": 1.84,
+          "reverseHoloTrend": 0.0,
+          "lowPriceExPlus": 1.68,
+          "avg1": 0.75,
+          "avg7": 1.89,
+          "avg30": 2.54
+        }
+      }
+    },
+    {
+      "id": "gym1-61",
+      "name": "Blaine's Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "16",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Kindle",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "Discard 1 Energy card attached to Blaine's Charmander in order to use this attack. If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "gym1",
+        "name": "Gym Heroes",
+        "series": "Gym",
+        "printedTotal": 132,
+        "total": 132,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "G1",
+        "releaseDate": "2000/08/14",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/gym1/symbol.png",
+          "logo": "https://images.pokemontcg.io/gym1/logo.png"
+        }
+      },
+      "number": "61",
+      "artist": "Ken Sugimori",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/gym1/61.png",
+        "large": "https://images.pokemontcg.io/gym1/61_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/gym1-61",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "1stEdition": {
+            "low": 4.61,
+            "mid": 7.24,
+            "high": 23.49,
+            "market": 7.51,
+            "directLow": 3.28
+          },
+          "unlimited": {
+            "low": 0.49,
+            "mid": 1.4,
+            "high": 5.49,
+            "market": 1.58,
+            "directLow": 0.84
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/gym1-61",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.67,
+          "lowPrice": 0.35,
+          "trendPrice": 1.32,
+          "reverseHoloTrend": 0.0,
+          "lowPriceExPlus": 0.95,
+          "avg1": 1.75,
+          "avg7": 1.53,
+          "avg30": 1.84
+        }
+      }
+    },
+    {
+      "id": "ex6-57",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Singe",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "The Defending Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex6",
+        "name": "FireRed \u0026 LeafGreen",
+        "series": "EX",
+        "printedTotal": 112,
+        "total": 116,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "RG",
+        "releaseDate": "2004/09/01",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex6/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex6/logo.png"
+        }
+      },
+      "number": "57",
+      "artist": "Kouki Saitou",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex6/57.png",
+        "large": "https://images.pokemontcg.io/ex6/57_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex6-57",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 1.39,
+            "mid": 2.45,
+            "high": 8.97,
+            "market": 2.51,
+            "directLow": 1.39
+          },
+          "reverseHolofoil": {
+            "low": 22.97,
+            "mid": 27.95,
+            "high": 59.99,
+            "market": 27.95
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex6-57",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.82,
+          "lowPrice": 0.1,
+          "trendPrice": 2.34,
+          "reverseHoloLow": 5.99,
+          "reverseHoloTrend": 14.09,
+          "lowPriceExPlus": 0.4,
+          "avg1": 3.95,
+          "avg7": 2.82,
+          "avg30": 1.9,
+          "reverseHoloAvg1": 1.25,
+          "reverseHoloAvg7": 16.66,
+          "reverseHoloAvg30": 8.81
+        }
+      }
+    },
+    {
+      "id": "ex6-58",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex6",
+        "name": "FireRed \u0026 LeafGreen",
+        "series": "EX",
+        "printedTotal": 112,
+        "total": 116,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "RG",
+        "releaseDate": "2004/09/01",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex6/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex6/logo.png"
+        }
+      },
+      "number": "58",
+      "artist": "Midori Harada",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex6/58.png",
+        "large": "https://images.pokemontcg.io/ex6/58_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex6-58",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.23,
+            "mid": 0.81,
+            "high": 2.99,
+            "market": 0.64,
+            "directLow": 0.4
+          },
+          "reverseHolofoil": {
+            "low": 17.01,
+            "mid": 23.97,
+            "high": 34.99,
+            "market": 32.95,
+            "directLow": 14.0
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex6-58",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.65,
+          "lowPrice": 0.02,
+          "trendPrice": 0.31,
+          "reverseHoloLow": 5.0,
+          "reverseHoloTrend": 12.96,
+          "lowPriceExPlus": 0.1,
+          "avg1": 0.15,
+          "avg7": 1.94,
+          "avg30": 1.63,
+          "reverseHoloAvg1": 10.0,
+          "reverseHoloAvg7": 21.33,
+          "reverseHoloAvg30": 6.78
+        }
+      }
+    },
+    {
+      "id": "base4-69",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard 1 Fire Energy card attached to Charmander in order to use this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "base4",
+        "name": "Base Set 2",
+        "series": "Base",
+        "printedTotal": 130,
+        "total": 130,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "B2",
+        "releaseDate": "2000/02/24",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base4/symbol.png",
+          "logo": "https://images.pokemontcg.io/base4/logo.png"
+        }
+      },
+      "number": "69",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base4/69.png",
+        "large": "https://images.pokemontcg.io/base4/69_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base4-69",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.48,
+            "mid": 1.35,
+            "high": 7.99,
+            "market": 1.9,
+            "directLow": 0.49
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base4-69",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.68,
+          "lowPrice": 0.1,
+          "trendPrice": 2.71,
+          "reverseHoloTrend": 3.95,
+          "lowPriceExPlus": 1.0,
+          "avg1": 1.49,
+          "avg7": 1.75,
+          "avg30": 2.23,
+          "reverseHoloAvg1": 3.95,
+          "reverseHoloAvg7": 3.95,
+          "reverseHoloAvg30": 3.95
+        }
+      }
+    },
+    {
+      "id": "base6-70",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard 1 Fire Energy card attached to Charmander or this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "base6",
+        "name": "Legendary Collection",
+        "series": "Other",
+        "printedTotal": 110,
+        "total": 110,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "LC",
+        "releaseDate": "2002/05/24",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/base6/symbol.png",
+          "logo": "https://images.pokemontcg.io/base6/logo.png"
+        }
+      },
+      "number": "70",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Common",
+      "flavorText": "Obviously prefers hot places. If it gets caught in the rain, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/base6/70.png",
+        "large": "https://images.pokemontcg.io/base6/70_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/base6-70",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.43,
+            "mid": 1.57,
+            "high": 9.99,
+            "market": 1.57,
+            "directLow": 0.5
+          },
+          "reverseHolofoil": {
+            "low": 97.99,
+            "mid": 230.77,
+            "high": 666.35,
+            "market": 128.32
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/base6-70",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 1.17,
+          "lowPrice": 0.15,
+          "trendPrice": 1.04,
+          "reverseHoloLow": 50.0,
+          "reverseHoloTrend": 55.46,
+          "lowPriceExPlus": 0.3,
+          "avg1": 0.4,
+          "avg7": 1.08,
+          "avg30": 2.68,
+          "reverseHoloAvg1": 40.0,
+          "reverseHoloAvg7": 62.55,
+          "reverseHoloAvg30": 48.01
+        }
+      }
+    },
+    {
+      "id": "dp3-82",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "8",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [],
+          "convertedEnergyCost": 0,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Lava Burn",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": "Does 10 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "+10"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "dp3",
+        "name": "Secret Wonders",
+        "series": "Diamond \u0026 Pearl",
+        "printedTotal": 132,
+        "total": 132,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "SW",
+        "releaseDate": "2007/11/01",
+        "updatedAt": "2018/03/04 10:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/dp3/symbol.png",
+          "logo": "https://images.pokemontcg.io/dp3/logo.png"
+        }
+      },
+      "number": "82",
+      "artist": "Masakazu Fukuda",
+      "rarity": "Common",
+      "flavorText": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dp3/82.png",
+        "large": "https://images.pokemontcg.io/dp3/82_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/dp3-82",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.29,
+            "mid": 0.99,
+            "high": 4.99,
+            "market": 1.32,
+            "directLow": 0.5
+          },
+          "reverseHolofoil": {
+            "low": 8.42,
+            "mid": 11.68,
+            "high": 17.46,
+            "market": 2.0
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/dp3-82",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 0.53,
+          "lowPrice": 0.02,
+          "trendPrice": 0.47,
+          "reverseHoloLow": 5.45,
+          "reverseHoloTrend": 5.08,
+          "lowPriceExPlus": 0.03,
+          "avg1": 0.02,
+          "avg7": 0.55,
+          "avg30": 0.5,
+          "reverseHoloAvg1": 12.5,
+          "reverseHoloAvg7": 4.95,
+          "reverseHoloAvg30": 3.59
+        }
+      }
+    },
+    {
+      "id": "g1-RC3",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Playful",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20×",
+          "text": "Flip a coin. If heads, this attack does 20 damage times the number of damage counters on this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "set": {
+        "id": "g1",
+        "name": "Generations",
+        "series": "XY",
+        "printedTotal": 115,
+        "total": 117,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "GEN",
+        "releaseDate": "2016/02/22",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/g1/symbol.png",
+          "logo": "https://images.pokemontcg.io/g1/logo.png"
+        }
+      },
+      "number": "RC3",
+      "artist": "Akira Komayama",
+      "rarity": "Common",
+      "flavorText": "My Charmander is so rambunctious! I wonder if we can become good friends?",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/g1/RC3.png",
+        "large": "https://images.pokemontcg.io/g1/RC3_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/g1-RC3",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 3.0,
+            "mid": 5.49,
+            "high": 10.99,
+            "market": 5.21,
+            "directLow": 4.54
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/g1-RC3",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 3.2,
+          "lowPrice": 1.3,
+          "trendPrice": 3.27,
+          "reverseHoloSell": 1.0,
+          "reverseHoloTrend": 14.03,
+          "lowPriceExPlus": 1.3,
+          "avg1": 1.5,
+          "avg7": 2.33,
+          "avg30": 3.41,
+          "reverseHoloAvg1": 1.0,
+          "reverseHoloAvg7": 18.49,
+          "reverseHoloAvg30": 5.6
+        }
+      }
+    },
+    {
+      "id": "ex3-98",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rage",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Charmander."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex3",
+        "name": "Dragon",
+        "series": "EX",
+        "printedTotal": 97,
+        "total": 100,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "DR",
+        "releaseDate": "2003/09/18",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex3/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex3/logo.png"
+        }
+      },
+      "number": "98",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex3/98.png",
+        "large": "https://images.pokemontcg.io/ex3/98_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex3-98",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "holofoil": {
+            "low": 54.99,
+            "mid": 69.69,
+            "high": 999.99,
+            "market": 77.66
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex3-98",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 74.98,
+          "lowPrice": 11.0,
+          "trendPrice": 45.19,
+          "reverseHoloLow": 94.99,
+          "reverseHoloTrend": 45.13,
+          "lowPriceExPlus": 40.0,
+          "avg1": 75.0,
+          "avg7": 46.13,
+          "avg30": 50.19,
+          "reverseHoloAvg1": 18.49,
+          "reverseHoloAvg7": 44.97,
+          "reverseHoloAvg30": 22.99
+        }
+      }
+    },
+    {
+      "id": "ecard1-97",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Tail Rap",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ecard1",
+        "name": "Expedition Base Set",
+        "series": "E-Card",
+        "printedTotal": 165,
+        "total": 165,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "EX",
+        "releaseDate": "2002/09/15",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ecard1/symbol.png",
+          "logo": "https://images.pokemontcg.io/ecard1/logo.png"
+        }
+      },
+      "number": "97",
+      "artist": "Masako Yamashita",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard1/97.png",
+        "large": "https://images.pokemontcg.io/ecard1/97_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ecard1-97",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 1.88,
+            "mid": 5.84,
+            "high": 17.5,
+            "market": 4.78,
+            "directLow": 7.98
+          },
+          "reverseHolofoil": {
+            "low": 24.99,
+            "mid": 31.94,
+            "high": 49.99,
+            "market": 31.98
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ecard1-97",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 4.02,
+          "lowPrice": 0.1,
+          "trendPrice": 3.7,
+          "reverseHoloSell": 10.9,
+          "reverseHoloLow": 1.99,
+          "reverseHoloTrend": 8.58,
+          "lowPriceExPlus": 0.5,
+          "avg1": 0.08,
+          "avg7": 4.45,
+          "avg30": 2.82,
+          "reverseHoloAvg1": 10.9,
+          "reverseHoloAvg7": 9.61,
+          "reverseHoloAvg30": 5.68
+        }
+      }
+    },
+    {
+      "id": "ecard1-98",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Gnaw",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Searing Flame",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Burned."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ecard1",
+        "name": "Expedition Base Set",
+        "series": "E-Card",
+        "printedTotal": 165,
+        "total": 165,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "EX",
+        "releaseDate": "2002/09/15",
+        "updatedAt": "2020/08/14 09:35:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ecard1/symbol.png",
+          "logo": "https://images.pokemontcg.io/ecard1/logo.png"
+        }
+      },
+      "number": "98",
+      "artist": "Yuichi Sawayama",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ecard1/98.png",
+        "large": "https://images.pokemontcg.io/ecard1/98_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ecard1-98",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 2.8,
+            "mid": 5.99,
+            "high": 19.58,
+            "market": 9.71,
+            "directLow": 4.2
+          },
+          "reverseHolofoil": {
+            "low": 39.97,
+            "mid": 42.98,
+            "high": 65.38,
+            "market": 52.32,
+            "directLow": 58.83
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ecard1-98",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 2.35,
+          "lowPrice": 0.14,
+          "trendPrice": 1.99,
+          "reverseHoloSell": 10.0,
+          "reverseHoloLow": 1.0,
+          "reverseHoloTrend": 9.75,
+          "lowPriceExPlus": 1.5,
+          "avg1": 1.29,
+          "avg7": 2.17,
+          "avg30": 3.06,
+          "reverseHoloAvg1": 15.0,
+          "reverseHoloAvg7": 7.54,
+          "reverseHoloAvg30": 10.7
+        }
+      }
+    },
+    {
+      "id": "dp7-101",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "level": "10",
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Ember",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": "Discard a Fire Energy attached to Charmander."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "dp7",
+        "name": "Stormfront",
+        "series": "Diamond \u0026 Pearl",
+        "printedTotal": 100,
+        "total": 106,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "SF",
+        "releaseDate": "2008/11/01",
+        "updatedAt": "2020/05/01 16:06:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/dp7/symbol.png",
+          "logo": "https://images.pokemontcg.io/dp7/logo.png"
+        }
+      },
+      "number": "101",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare Secret",
+      "flavorText": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/dp7/101.png",
+        "large": "https://images.pokemontcg.io/dp7/101_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/dp7-101",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "holofoil": {
+            "low": 69.98,
+            "mid": 79.6,
+            "high": 124.99,
+            "market": 89.5
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/dp7-101",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 7.5,
+          "lowPrice": 6.0,
+          "trendPrice": 16.65,
+          "reverseHoloSell": 15.0,
+          "reverseHoloLow": 27.49,
+          "reverseHoloTrend": 24.67,
+          "lowPriceExPlus": 22.5,
+          "avg1": 10.0,
+          "avg7": 23.98,
+          "avg30": 22.24,
+          "reverseHoloAvg1": 15.0,
+          "reverseHoloAvg7": 30.2,
+          "reverseHoloAvg30": 19.77
+        }
+      }
+    },
+    {
+      "id": "ex6-113",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Rage",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "10+",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Charmander."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "ex6",
+        "name": "FireRed \u0026 LeafGreen",
+        "series": "EX",
+        "printedTotal": 112,
+        "total": 116,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "ptcgoCode": "RG",
+        "releaseDate": "2004/09/01",
+        "updatedAt": "2019/01/28 16:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/ex6/symbol.png",
+          "logo": "https://images.pokemontcg.io/ex6/logo.png"
+        }
+      },
+      "number": "113",
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Secret",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/ex6/113.png",
+        "large": "https://images.pokemontcg.io/ex6/113_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/ex6-113",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "holofoil": {
+            "low": 31.95,
+            "mid": 64.99,
+            "high": 129.99,
+            "market": 47.85
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/ex6-113",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 11.89,
+          "lowPrice": 5.0,
+          "trendPrice": 18.09,
+          "reverseHoloTrend": 15.13,
+          "lowPriceExPlus": 5.5,
+          "avg1": 16.5,
+          "avg7": 12.15,
+          "avg30": 14.77,
+          "reverseHoloAvg1": 16.99,
+          "reverseHoloAvg7": 12.8,
+          "reverseHoloAvg30": 10.19
+        }
+      }
+    },
+    {
+      "id": "swshp-SWSH092",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Collect",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Draw a card."
+        },
+        {
+          "name": "Flare",
+          "cost": [
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "swshp",
+        "name": "SWSH Black Star Promos",
+        "series": "Sword \u0026 Shield",
+        "printedTotal": 184,
+        "total": 181,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-SW",
+        "releaseDate": "2019/11/15",
+        "updatedAt": "2021/12/15 14:46:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/swshp/symbol.png",
+          "logo": "https://images.pokemontcg.io/swshp/logo.png"
+        }
+      },
+      "number": "SWSH092",
+      "artist": "Uta",
+      "rarity": "Promo",
+      "flavorText": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "D",
+      "images": {
+        "small": "https://images.pokemontcg.io/swshp/SWSH092.png",
+        "large": "https://images.pokemontcg.io/swshp/SWSH092_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH092",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "holofoil": {
+            "low": 0.25,
+            "mid": 0.99,
+            "high": 20.0,
+            "market": 0.72,
+            "directLow": 0.7
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/swshp-SWSH092",
+        "updatedAt": "2022/06/10",
+        "prices": {
+          "averageSellPrice": 3.48,
+          "lowPrice": 2.2,
+          "trendPrice": 3.54,
+          "reverseHoloTrend": 5.52,
+          "lowPriceExPlus": 2.39,
+          "avg1": 6.0,
+          "avg7": 3.55,
+          "avg30": 3.52,
+          "reverseHoloAvg1": 3.4,
+          "reverseHoloAvg7": 5.47,
+          "reverseHoloAvg30": 4.34
+        }
+      }
+    },
+    {
+      "id": "mcd21-9",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Flame Tail",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "mcd21",
+        "name": "McDonald's Collection 2021",
+        "series": "Other",
+        "printedTotal": 25,
+        "total": 25,
+        "legalities": {
+          "unlimited": "Legal",
+          "expanded": "Legal"
+        },
+        "releaseDate": "2021/02/09",
+        "updatedAt": "2021/09/07 13:00:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/mcd21/symbol.png",
+          "logo": "https://images.pokemontcg.io/mcd21/logo.png"
+        }
+      },
+      "number": "9",
+      "artist": "Kagemaru Himeno",
+      "rarity": "Promo",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/mcd21/9.png",
+        "large": "https://images.pokemontcg.io/mcd21/9_hires.png"
+      },
+      "tcgplayer": {
+        "url": "https://prices.pokemontcg.io/tcgplayer/mcd21-9",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "normal": {
+            "low": 0.1,
+            "mid": 0.9,
+            "high": 7.0,
+            "market": 0.69
+          },
+          "holofoil": {
+            "low": 3.0,
+            "mid": 6.2,
+            "high": 32.0,
+            "market": 4.38,
+            "directLow": 4.99
+          }
+        }
+      },
+      "cardmarket": {
+        "url": "https://prices.pokemontcg.io/cardmarket/mcd21-9",
+        "updatedAt": "2022/06/12",
+        "prices": {
+          "averageSellPrice": 3.75,
+          "lowPrice": 0.11,
+          "trendPrice": 4.22,
+          "reverseHoloTrend": 9.47,
+          "lowPriceExPlus": 1.75,
+          "avg1": 4.5,
+          "avg7": 4.12,
+          "avg30": 3.8,
+          "reverseHoloAvg1": 13.9,
+          "reverseHoloAvg7": 11.21,
+          "reverseHoloAvg30": 12.88
+        }
+      }
+    },
+    {
+      "id": "tk2b-2",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "50",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": ""
+        },
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "set": {
+        "id": "tk2b",
+        "name": "EX Trainer Kit 2 Minun",
+        "series": "EX",
+        "printedTotal": 12,
+        "total": 12,
+        "legalities": {
+          "unlimited": "Legal"
+        },
+        "releaseDate": "2006/03/01",
+        "updatedAt": "2022/01/13 20:44:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/tk2b/symbol.png",
+          "logo": "https://images.pokemontcg.io/tk2b/logo.png"
+        }
+      },
+      "number": "2",
+      "artist": "Midori Harada",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal"
+      },
+      "images": {
+        "small": "https://images.pokemontcg.io/tk2b/2.png",
+        "large": "https://images.pokemontcg.io/tk2b/2_hires.png"
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 250,
+  "count": 35,
+  "totalCount": 35
+}

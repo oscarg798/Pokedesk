@@ -1,17 +1,13 @@
 package com.oscarg798.pokedesk.lib
 
+import androidx.collection.LruCache
 import androidx.lifecycle.ViewModel
 
 class ViewModelStore {
-    private val cachedViewModels = HashMap<String, ViewModel>()
+    private val cachedViewModels = LruCache<String, ViewModel>(5)
 
     fun <T : ViewModel> get(key: String, create: () -> T) =
         cachedViewModels[key] ?: create.invoke().also {
-            cachedViewModels[key] = it
+            cachedViewModels.put(key, it)
         }
 }
-
-fun <T : ViewModel> ViewModelStore.viewModel(
-    key: String,
-    create: () -> T,
-): T = get(key, create) as T

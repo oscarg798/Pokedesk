@@ -40,6 +40,7 @@ class PokemonListViewModelTest {
         override val main: CoroutineContext
             get() = testDispatcher
     }
+
     private lateinit var viewModel: PokemonListViewModel
 
     @Before

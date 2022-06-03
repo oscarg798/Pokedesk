@@ -35,11 +35,11 @@ class PokemonRepositoryTest {
     private val statsDao: StatsDao = mockk(relaxed = true)
     private val gson = Gson()
 
-    private lateinit var repository: PokemonRepository
+    private lateinit var repository: PokemonRepositoryImpl
 
     @Before
     fun setup() {
-        repository = PokemonRepository(
+        repository = PokemonRepositoryImpl(
             pokemonService = pokemonService,
             typeService = typeService,
             idExtractor = idExtractor,

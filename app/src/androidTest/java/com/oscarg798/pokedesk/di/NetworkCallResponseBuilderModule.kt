@@ -1,6 +1,7 @@
 package com.oscarg798.pokedesk.di
 
 import com.oscarg798.pokedesk.networkmock.NetworkCallResponseBuilder
+import com.oscarg798.pokedesk.networkmock.PokemonCardImagesResponseBuilder
 import com.oscarg798.pokedesk.networkmock.PokemonDetailNetworkCallResponseBuilder
 import com.oscarg798.pokedesk.networkmock.PokemonListNetworkCallResponseBuilder
 import com.oscarg798.pokedesk.networkmock.TypeNetworkCallResponseBuilder
@@ -30,5 +31,11 @@ abstract class NetworkCallResponseBuilderModule {
     @Binds
     abstract fun bindPokemonTypeResponseBuilder(
         typeNetworkCallResponseBuilder: TypeNetworkCallResponseBuilder
+    ): NetworkCallResponseBuilder
+
+    @IntoSet
+    @Binds
+    abstract fun bindPokemonCardImagesBuilder(
+        pokemonCardImagesResponseBuilder: PokemonCardImagesResponseBuilder
     ): NetworkCallResponseBuilder
 }
