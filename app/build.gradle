@@ -67,10 +67,16 @@ android {
             installOptions "-g"
         }
     }
+
+    kotlin {
+        sourceSets.all {
+            kotlin.srcDir("build/generated/ksp/$name/kotlin")
+        }
+    }
 }
 
 dependencies {
-    
+
     implementation libs.androidx.coreKtx
     implementation libs.androidx.appcompat
     implementation libs.material
@@ -130,4 +136,7 @@ dependencies {
     implementation libs.androidx.room.runtime
     implementation libs.androidx.room.ktx
     ksp libs.androidx.room.compiler
+
+    implementation(project(":annotations"))
+    ksp(project(":bindprocessor"))
 }
