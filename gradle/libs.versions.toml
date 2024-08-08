@@ -29,9 +29,9 @@ androidx-room-testing = "androidx.room:room-testing:2.4.2"
 androidx-fragment-ktx = "androidx.fragment:fragment-ktx:1.3.6"
 androidx-fragment-testing = "androidx.fragment:fragment-testing:1.3.6"
 
-androidx-work-runtime = "androidx.work:work-runtime:2.5.0"
-androidx-work-gcm = "androidx.work:work-gcm:2.5.0"
-androidx-work-testing = "androidx.work:work-testing:2.5.0"
+androidx-work-runtime = "androidx.work:work-runtime:2.9.1"
+androidx-work-gcm = "androidx.work:work-gcm:2.9.1"
+androidx-work-testing = "androidx.work:work-testing:2.9.1"
 
 androidx-splashscreen = "androidx.core:core-splashscreen:1.0.0-alpha02"
 
@@ -166,7 +166,7 @@ arrow-sintax = "io.arrow-kt:arrow-syntax:0.13.2"
 arrow-meta = "io.arrow-kt:arrow-meta:0.13.2"
 arrow-core = "io.arrow-kt:arrow-core:0.13.2"
 
-workManager-ktx = "androidx.work:work-runtime-ktx:2.7.0-rc01"
+workManager-ktx = "androidx.work:work-runtime-ktx:2.9.1"
 
 compose-dialogs = "io.github.vanpra.compose-material-dialogs:datetime:0.6.1"
 
